@@ -1,10 +1,9 @@
 #!/usr/bin/env -S deno run --allow-read --allow-write --allow-env
 
-import { parse } from "https://deno.land/std@0.203.0/path/mod.ts";
+import { parse,  } from "https://deno.land/std@0.203.0/path/mod.ts";
 import { walk, WalkEntry } from "https://deno.land/std@0.203.0/fs/mod.ts";
 import { parse as parseFlags } from "https://deno.land/std@0.202.0/flags/mod.ts";
 
-const nameRE = /(?<name>argon|neon|xenon|radon|krypton)/i
 
 async function findFonts (src: string): Promise<WalkEntry[]> {
   const fonts: WalkEntry[] = [];
@@ -21,25 +20,20 @@ function getDstPath (font: WalkEntry): string {
   if (name.match(/Var(VF)?$/) ) {
     // web variable fonts (woff and woff2)
     if (ext.match(/\.woff2?/)) {
-      return `${dst}/fonts/variable/web/${base}`
+      return `${dst}/fonts/webfonts/${name}[wght,wdth,slnt]${ext}`
     }
     // desktop variable fonts (ttf)
     if (ext.match(/\.ttf/)) {
-      return `${dst}/fonts/variable/desktop/${base}`
+      return `${dst}/fonts/variable/${name}[wght,wdth,slnt]${ext}`
     }
   } else {
-    const family = name.match(nameRE)?.groups?.name.toLowerCase();
-    if (!family) {
-      console.error(`Could not find family name for ${font.path}`);
-      Deno.exit(1);
-    }
     // web static fonts (woff and woff2)
     if (ext.match(/\.woff2?/)) {
-      return `${dst}/fonts/static/web/${family}/${base}`
+      return `${dst}/fonts/webfonts/${base}`
     }
     // desktop static fonts (otf)
     if (ext.match(/\.otf/)) {
-      return `${dst}/fonts/static/desktop/${family}/${base}`
+      return `${dst}/fonts/otf/${base}`
     }
   }
   throw new Error(`Could not find destination path for ${font.path}`);
@@ -73,6 +67,7 @@ console.log("Destination: ", dst);
 const fonts = await findFonts(src);
 for (const f of fonts) {
   const dstPath = getDstPath(f)
+  await Deno.mkdir(parse(dstPath).dir, {recursive: true});
   await Deno.copyFile(f.path, dstPath);
   console.log(dstPath)
 }
