@@ -71,15 +71,16 @@ If you only want texture healing and basic coding ligatures, add the following l
   "editor.fontLigatures": true,
 ```
 
-> 👉 Note that this setting is not available from the graphical settings editor, you must create it manually.
+> [!NOTE]
+> This setting is not available from the graphical settings editor, you must create it manually.
 
 If you want more coding ligatures, you must customize that setting to specify all of the sets you want enabled:
 
 ```
   "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
 ```
-
-> 👉 Note that you must start the setting with `'calt', 'liga', 'dlig'`! The stylistic sets will not have any effect without enabling contextual alternates, ligatures, and discretionary ligatures.
+> [!NOTE]
+> You must start the setting with `'calt', 'liga', 'dlig'`! The stylistic sets will not have any effect without enabling contextual alternates, ligatures, and discretionary ligatures.
 
 If you want coding ligatures but do _not_ want texture healing, you can elide the `calt` setting:
 
