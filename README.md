@@ -19,6 +19,24 @@ The variable fonts have one file per family (Neon, Argon, etc). Modern and conve
 
 The static fonts have one file per cut per family. The variable axes have named stops for each of the axes, like `light` or `bold` for weight, `italic` for italics, and `semiwide` and `wide` for width. The combinatoric explosion of all these properties means that the full installation of static fonts involves hundreds of font files. But for situations which don't yet support variable fonts, the static builds give you a wide variety of stops throughout the range of each axis.
 
+## Coding Ligatures
+
+There are eight groups of coding ligatures, separated into stylistic sets. You may be able to selectively enable or disable individual sets:
+
+* `ss01`: ligatures related to the equals glyph like `!=` and `===`.
+* `ss02`: ligatures related to the greater than or less than operators.
+* `ss03`: ligatures related to arrows like `->` and `=>`.
+* `ss04`: ligatures related to markup, like `</` and `/>`. 
+* `ss05`: ligatures related to the F♯ programming language, like `|>`.
+* `ss06`: ligatures related to repeated uses of `#` such as `##` or `###`.
+* `ss07`: ligatures related to the asterisk like `***`.
+* `ss08`: ligatures related to combinations like `.=` or `.-`.
+
+You must enable discrectionary ligatures first, often using the `dlig` setting. See below for editor-specific instructions.
+
+![image](https://github.com/githubnext/monaspace/assets/22723/785c03e1-0c9c-421c-ae3c-c107a3c08c33)
+
+
 ## Desktop Installation
 
 ### MacOS
@@ -38,6 +56,34 @@ As with the desktop fonts, they are made availabe both as variable and static fo
 
 ```
 TODO: add more instructions about usage of fonts on the web, and include sample CSS for loading fonts in web projects
+```
+
+## Editors
+
+### Visual Studio Code
+
+Texture healing and coding ligatures are controlled by the same setting. You can enable either, or both.
+
+If you only want texture healing and basic coding ligatures, add the following line to your `settings.json`:
+
+```
+  "editor.fontLigatures": true,
+```
+
+> 👉 Note that this setting is not available from the graphical settings editor, you must create it manually.
+
+If you want more coding ligatures, you must customize that setting to specify all of the sets you want enabled:
+
+```
+  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
+```
+
+> 👉 Note that you must start the setting with `'calt', 'liga', 'dlig'`! The stylistic sets will not have any effect without enabling contextual alternates, ligatures, and discretionary ligatures.
+
+If you want coding ligatures but do _not_ want texture healing, you can elide the `calt` setting:
+
+```
+  "editor.fontLigatures": "'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
 ```
 
 ## Utilities
