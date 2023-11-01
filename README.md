@@ -88,7 +88,9 @@ If you want coding ligatures but do _not_ want texture healing, you can elide th
   "editor.fontLigatures": "'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
 ```
 
-## Utilities
+## Contribution
+
+There's no formal contribution guide yet! If you're interested in contributing to the typefaces, you should read the [Texture Healing](https://github.com/githubnext/monaspace/blob/main/docs/Texture%20Healing.md) guide, as it explains how to produce the neccessary alternate glyphs.
 
 ### Renamer utility
 
@@ -97,3 +99,11 @@ This is a convenience utility which renames moves the built fonts into the respe
 ```bash
 $ ./util/renamer.ts --src="~/path/to/the/built/fonts"
 ```
+
+## License
+
+SIL OFL. See [LICENSE](https://github.com/githubnext/monaspace/blob/main/LICENSE).
+
+## Support
+
+Please file issues on this repo. Monaspace is not a supported product; do not reach out to GitHub support with questions as they do not provide support for GitHub Next explorations.
