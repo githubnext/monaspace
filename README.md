@@ -107,3 +107,30 @@ SIL OFL. See [LICENSE](https://github.com/githubnext/monaspace/blob/main/LICENSE
 ## Support
 
 Please file issues on this repo. Monaspace is not a supported product; do not reach out to GitHub support with questions as they do not provide support for GitHub Next explorations.
+
+## Contributors
+
+Monaspace was made with the goal of improving all code, for all developers. [GitHub Next](https://githubnext.com) set out on this journey in 2022, and we were fortunate to find a type foundry that shares our passion for improving software in [Lettermatic](https://lettermatic.com/).
+
+
+#### Lettermatic
+
+![lettermatic](https://github.com/githubnext/monaspace/assets/22723/b5e3ea19-11e2-4b40-a620-97e209a65ad6)
+
+- [Riley Cran](https://github.com/rileycran)
+- Danelle Cheney
+- Heather Cran
+
+#### GitHub Next
+
+![GitHub Next](https://github.com/githubnext/monaspace/assets/22723/98ed2c42-8e6e-454c-a4b6-7c0675f47323)
+
+- [Cole Bemis](https://github.com/colebemis)
+- [Amelia Wattenberger](https://github.com/wattenberger)
+- [Krzysztof Cieślak](https://github.com/krzysztof-cieslak)
+- [Idan Gazit](https://github.com/idan)
+
+#### Special Thanks To
+- Anna Thomas
+- Marg Chronister
+- Jane Solomon
