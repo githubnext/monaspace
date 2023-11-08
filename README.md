@@ -110,7 +110,7 @@ Please file issues on this repo. Monaspace is not a supported product; do not re
 
 ## Contributors
 
-Monaspace was made with the goal of improving all code, for all developers. [GitHub Next](https://githubnext.com) set out on this journey in 2022, and we were fortunate to find a type foundry that shares our passion for improving software in [Lettermatic](https://lettermatic.com/).
+Monaspace was made with the goal of improving all code, for all developers. [GitHub Next](https://githubnext.com) set out on this journey in 2022, and we were fortunate to find a type foundry that shares our passion for improving software in [Lettermatic](https://lettermatic.com/). The result is a marriage of form and function that opens the door to new developer experiences, and that would not have been possible without the domain expertise and skill of the lettermatic team, and the time they invested to work with GitHub Next on figuring out how typography ought to work for code.
 
 
 #### Lettermatic
