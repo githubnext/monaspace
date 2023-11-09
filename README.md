@@ -55,10 +55,6 @@ All files with a `.woff` or `.woff2` suffix are intended for use on the web. You
 
 As with the desktop fonts, they are made availabe both as variable and static fonts.
 
-```
-TODO: add more instructions about usage of fonts on the web, and include sample CSS for loading fonts in web projects
-```
-
 ## Editors
 
 ### Visual Studio Code
