@@ -37,7 +37,7 @@ There are eight groups of coding ligatures, separated into stylistic sets. You m
 
 You must enable discrectionary ligatures first, often using the `dlig` setting. See below for editor-specific instructions.
 
-![image](https://github.com/githubnext/monaspace/assets/22723/785c03e1-0c9c-421c-ae3c-c107a3c08c33)
+![A visual glossary of code ligatures available in the Monaspace type system](https://github.com/githubnext/monaspace/assets/22723/49b4f802-265d-414c-94c0-ec712e3c0ecc)
 
 
 ## Desktop Installation
@@ -113,7 +113,7 @@ Monaspace was made with the goal of improving all code, for all developers. [Git
 
 #### Lettermatic
 
-![lettermatic](https://github.com/githubnext/monaspace/assets/22723/b5e3ea19-11e2-4b40-a620-97e209a65ad6)
+![lettermatic logo](https://github.com/githubnext/monaspace/assets/22723/36280a3a-ed6f-45a9-8e74-44c9d005794d)
 
 - [Riley Cran](https://github.com/rileycran)
 - Danelle Cheney
@@ -121,7 +121,7 @@ Monaspace was made with the goal of improving all code, for all developers. [Git
 
 #### GitHub Next
 
-![GitHub Next](https://github.com/githubnext/monaspace/assets/22723/98ed2c42-8e6e-454c-a4b6-7c0675f47323)
+![GitHub Next Logo](https://github.com/githubnext/monaspace/assets/22723/744f8ba3-6dd7-4c67-b7e3-8e7d408d9dd9)
 
 - [Cole Bemis](https://github.com/colebemis)
 - [Amelia Wattenberger](https://github.com/wattenberger)
