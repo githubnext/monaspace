@@ -8,7 +8,7 @@ Letters on a grid is how we see our code. Why not make those letters better?
 
 🔤 **[Download the latest release](https://github.com/githubnext/monaspace/releases/latest)** 🔤
 
-![image](https://github.com/githubnext/monaspace/assets/22723/963edc2a-626b-4591-aea2-b5d8c4a12ac6)
+![image](https://github.com/githubnext/monaspace/assets/22723/301020e0-f138-44af-abb1-48efa610be08)
 
 
 ## Overview
