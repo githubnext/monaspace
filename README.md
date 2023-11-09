@@ -16,7 +16,7 @@ Letters on a grid is how we see our code. Why not make those letters better?
 Monaspace is made available as both a variable-axis font and as static builds. You can install them both side-by-side; their family names are distinct. For example:
 
 - `Monaspace _____`: the static family
-- `Monaspace _____ VF`: the variable family
+- `Monaspace _____ Var` or `VF`: the variable family
 
 The variable fonts have one file per family (Neon, Argon, etc). Modern and convenient!
 
