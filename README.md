@@ -55,7 +55,7 @@ $ bash ./util/install_macos.sh
 
 All files with a `.woff` or `.woff2` suffix are intended for use on the web. You do not install them with your operating system, but rather add them to your web development project.
 
-As with the desktop fonts, they are made availabe both as variable and static fonts.
+As with the desktop fonts, they are made available both as variable and static fonts.
 
 ## Editors
 
