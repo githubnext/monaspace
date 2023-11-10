@@ -60,12 +60,17 @@ As with the desktop fonts, they are made available both as variable and static f
 ## Editors
 
 ### Visual Studio Code
+Set the font family
+
+```json
+    "editor.fontFamily": "'Monaspace Neon Var', monospace",
+```
 
 Texture healing and coding ligatures are controlled by the same setting. You can enable either, or both.
 
 If you only want texture healing and basic coding ligatures, add the following line to your `settings.json`:
 
-```
+```json
   "editor.fontLigatures": true,
 ```
 
@@ -74,7 +79,7 @@ If you only want texture healing and basic coding ligatures, add the following l
 
 If you want more coding ligatures, you must customize that setting to specify all of the sets you want enabled:
 
-```
+```json
   "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
 ```
 > [!NOTE]
@@ -82,7 +87,7 @@ If you want more coding ligatures, you must customize that setting to specify al
 
 If you want coding ligatures but do _not_ want texture healing, you can elide the `calt` setting:
 
-```
+```json
   "editor.fontLigatures": "'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
 ```
 
