@@ -51,6 +51,15 @@ There is also a script which automates the deletion of all Monaspace fonts from 
 $ bash ./util/install_macos.sh
 ```
 
+### Linux
+You can manually drag the fonts from the `fonts/otf` and `fonts/variable` directory into `~/.local/share/fonts`.
+
+There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
+
+```bash
+$ ./util/install_linux.sh
+```
+
 ### Webfonts
 
 All files with a `.woff` or `.woff2` suffix are intended for use on the web. You do not install them with your operating system, but rather add them to your web development project.
