@@ -54,6 +54,7 @@ $ bash ./util/install_macos.sh
 You can also use [homebrew](https://brew.sh/) as an alternative:
 
 ```bash
+brew tap homebrew/cask-fonts
 brew install --cask font-monaspace
 ```
 
