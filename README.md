@@ -51,6 +51,12 @@ There is also a script which automates the deletion of all Monaspace fonts from 
 $ bash ./util/install_macos.sh
 ```
 
+You can also use [homebrew](https://brew.sh/) as an alternative:
+
+```bash
+brew install --cask font-monaspace
+```
+
 ### Webfonts
 
 All files with a `.woff` or `.woff2` suffix are intended for use on the web. You do not install them with your operating system, but rather add them to your web development project.
