@@ -20,13 +20,13 @@ Monaspace is available as a variable-axis font and a static build. You can insta
 
 The variable fonts have one file per family (Neon, Argon, etc.). Modern and convenient!
 
-The static fonts have one file per cut, per family. The variable axes have named stops for each axe, like `light` or `bold` for weight, `italic` for italics, and `semiwide` or `wide` for width. The combinatorial explosion of all these properties means the complete installation of static fonts involves hundreds of font files. But for situations that don't yet support variable fonts, the static builds give you a wide variety of stops throughout the range of each axis.
+The static fonts have one file per cut, per family. The variable axes have named stops for each axis, like `light` or `bold` for weight, `italic` for italics, and `semiwide` or `wide` for width. The combinatorial explosion of all these properties means the complete installation of static fonts involves hundreds of font files. But for situations that don't yet support variable fonts, the static builds give you a wide variety of stops throughout the range of each axis.
 
 ## Coding Ligatures
 
 There are eight groups of coding ligatures, separated into stylistic sets. You may be able to enable or disable individual sets selectively:
 
-* `ss01`: ligatures related to the equals' glyph like `!=` and `===`.
+* `ss01`: ligatures related to the equals glyph like `!=` and `===`.
 * `ss02`: ligatures related to the greater than or less than operators.
 * `ss03`: ligatures related to arrows like `->` and `=>`.
 * `ss04`: ligatures related to markup, like `</` and `/>`. 
