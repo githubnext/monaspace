@@ -67,8 +67,7 @@ You can manually drag the fonts from the `fonts/otf` and `fonts/variable` direct
 There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
 ```bash
-$ cd util
-$ bash ./install_linux.sh
+$ ./util/install_linux.sh
 ```
 
 ### Webfonts
