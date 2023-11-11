@@ -49,7 +49,7 @@ There is also a script that automates the deletion of all Monaspace fonts from `
 
 ```bash
 $ cd util
-$ bash ./install_macos.sh
+$ bash ./install.sh
 ```
 You can also use [homebrew](https://brew.sh/) as an alternative:
 
@@ -68,7 +68,7 @@ There is also a script which automates the deletion of all Monaspace fonts from 
 
 ```bash
 $ cd util
-$ bash ./install_linux.sh
+$ bash ./install.sh
 ```
 
 ### Webfonts
