@@ -51,7 +51,6 @@ There is also a script that automates the deletion of all Monaspace fonts from `
 $ cd util
 $ bash ./install_macos.sh
 ```
-
 You can also use [homebrew](https://brew.sh/) as an alternative:
 
 ```bash
@@ -61,6 +60,16 @@ brew install font-monaspace
 
 ### Windows
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
+
+### Linux
+You can manually drag the fonts from the `fonts/otf` and `fonts/variable` directory into `~/.local/share/fonts`.
+
+There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
+
+```bash
+$ cd util
+$ bash ./install_linux.sh
+```
 
 ### Webfonts
 
