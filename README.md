@@ -60,11 +60,15 @@ As with the desktop fonts, they are made available both as variable and static f
 ## Editors
 
 ### Visual Studio Code
-Set the font family
+
+Set the font family:
 
 ```json
-    "editor.fontFamily": "'Monaspace Neon Var', monospace",
+    "editor.fontFamily": "'Monaspace Neon', monospace",
 ```
+
+> [!NOTE]
+> Variable fonts are not yet well-supported in VS Code, and it is not yet possible to mix multiple fonts. Stay tuned, we're talking with the VS Code team about it!
 
 Texture healing and coding ligatures are controlled by the same setting. You can enable either, or both.
 
