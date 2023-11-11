@@ -52,6 +52,13 @@ $ cd util
 $ bash ./install_macos.sh
 ```
 
+You can also use [homebrew](https://brew.sh/) as an alternative:
+
+```bash
+brew tap homebrew/cask-fonts
+brew install font-monaspace
+```
+
 ### Windows
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
 
