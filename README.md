@@ -48,7 +48,8 @@ You can manually drag the fonts from the `fonts/otf` and `fonts/variable` direct
 There is also a script which automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
 ```bash
-$ bash ./util/install_macos.sh
+$ cd util
+$ bash ./install_macos.sh
 ```
 
 ### Webfonts
