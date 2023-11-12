@@ -61,6 +61,11 @@ brew install font-monaspace
 ### Windows
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
 
+```powershell
+$ cd util
+$ ./install_windows.sh
+```
+
 ### Linux
 You can manually drag the fonts from the `fonts/otf` and `fonts/variable` directory into `~/.local/share/fonts`.
 
