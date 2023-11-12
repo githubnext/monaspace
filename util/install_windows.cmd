@@ -1,5 +1,14 @@
 @echo off
 
+echo Checking for admin rights...
+net session >nul 2>&1
+if %errorLevel% == 0 (
+  echo Admin rights granted.
+) else (
+  echo Admin rights required. Please run this script as an administrator.
+  exit /b 1
+)
+
 echo Installing fonts...
 
 set mainFontFolder="./../fonts/otf"
