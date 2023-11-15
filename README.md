@@ -63,7 +63,7 @@ You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directo
 
 ```powershell
 $ cd util
-$ ./install_windows.sh
+$ ./install_windows.cmd
 ```
 
 ### Linux
