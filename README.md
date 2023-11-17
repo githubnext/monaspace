@@ -75,31 +75,62 @@ Font caching on operating systems is an inscrutable mess dating back thirty year
 
 Restarting is usually the only way to be 100% sure that the underlying machinery in the operating system picks up the new fonts.
 
-### MacOS
+### Manual Install
+
+#### MacOS
+
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into Font Book.
 
-There is also a script that automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
+#### Windows
 
-```bash
-$ bash util/install_macos.sh
-```
-You can also use [homebrew](https://brew.sh/) as an alternative:
-
-```bash
-brew tap homebrew/cask-fonts
-brew install font-monaspace
-```
-
-### Windows
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
 
-### Linux
+#### Linux
+
 You can manually drag the fonts from the `fonts/otf` and `fonts/variable` directory into `~/.local/share/fonts`.
 
-There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
+### Automated with Make
+
+For all OSes, use the provided [`Makefile`](Makefile) targets:
+
+#### Install
+
+```sh
+$ make install
+Fonts successfully installed in ~/.local/share/fonts/Monaspace
+```
+
+#### Uninstall
+
+```sh
+$ make uninstall
+Fonts successfully uninstalled
+```
+
+#### Make Optional flags
+
+| name | description | default value |
+|-|-|-|
+| DEST_DIR | Base directory where the fonts should be installed. | Windows: `%WINDIR%/Fonts`<br>MacOS: `~/Library/Fonts`<br>Linux: `~/.local/share/fonts` |
+| WRAP | Install the fonts in a subfolder named `Monaspace` within the `DEST_DIR`<br>`1` to enable, unset or any other value to disable it.| Enable by default for Linux, not supported yet otherwise. |
+
+**Examples:**
+```sh
+$ make install DEST_DIR=~/.fonts
+```
+```sh
+$ make install WRAP=no
+```
+
+### Package managers
+
+#### MacOS
+
+A [homebrew](https://brew.sh/) cask is available for MacOS:
 
 ```bash
-$ bash util/install_linux.sh
+$ brew tap homebrew/cask-fonts
+$ brew install font-monaspace
 ```
 
 ### Webfonts
