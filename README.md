@@ -42,33 +42,58 @@ You must enable discretionary ligatures first, often using the `dlig` setting. S
 
 ## Desktop Installation
 
-### MacOS
+### Manually
+
+#### MacOS
+
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into Font Book.
 
-There is also a script that automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
+#### Windows
 
-```bash
-$ cd util
-$ bash ./install_macos.sh
-```
-You can also use [homebrew](https://brew.sh/) as an alternative:
-
-```bash
-brew tap homebrew/cask-fonts
-brew install font-monaspace
-```
-
-### Windows
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
 
-### Linux
+#### Linux
+
 You can manually drag the fonts from the `fonts/otf` and `fonts/variable` directory into `~/.local/share/fonts`.
 
-There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
+### Make
+
+For all OSes, use the provided [`Makefile`](Makefile) targets:
+
+```sh
+$ make install
+Fonts successfully installed in ~/.local/share/fonts/Monaspace
+```
+
+```sh
+$ make uninstall
+Fonts successfully uninstalled
+```
+
+#### Make Optional flags
+
+| name | description | default value |
+|-|-|-|
+| DEST_DIR | Base directory where the fonts should be installed. | Windows: `%WINDIR%/Fonts`<br>MacOS: `~/Library/Fonts`<br>Linux: `~/.local/share/fonts` |
+| WRAP | Install the fonts in a subfolder named `Monaspace` within the `DEST_DIR`<br>`1` to enable, unset or any other value to disable it.| Enable by default for Linux which is the only one that supports it. | 
+
+**Examples:**
+```sh
+$ make install DEST_DIR=~/.fonts
+```
+```sh
+$ make install WRAP=no
+```
+
+### Package managers
+
+#### MacOS
+
+A [homebrew](https://brew.sh/) cask is available for MacOS:
 
 ```bash
-$ cd util
-$ bash ./install_linux.sh
+$ brew tap homebrew/cask-fonts
+$ brew install font-monaspace
 ```
 
 ### Webfonts
