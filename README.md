@@ -10,7 +10,6 @@ Letters on a grid is how we see our code. Why not make those letters better?
 
 ![image](https://github.com/githubnext/monaspace/assets/22723/301020e0-f138-44af-abb1-48efa610be08)
 
-
 ## Overview
 
 Monaspace is available as a variable-axis font and a static build. You can install them both side-by-side; their family names are distinct. For example:
@@ -26,23 +25,23 @@ The static fonts have one file per cut, per family. The variable axes have named
 
 There are eight groups of coding ligatures, separated into stylistic sets. You may be able to enable or disable individual sets selectively:
 
-* `ss01`: ligatures related to the equals glyph like `!=` and `===`.
-* `ss02`: ligatures related to the greater than or less than operators.
-* `ss03`: ligatures related to arrows like `->` and `=>`.
-* `ss04`: ligatures related to markup, like `</` and `/>`. 
-* `ss05`: ligatures related to the F# programming language, like `|>`.
-* `ss06`: ligatures related to repeated uses of `#` such as `##` or `###`.
-* `ss07`: ligatures related to the asterisk like `***`.
-* `ss08`: ligatures related to combinations like `.=` or `.-`.
+- `ss01`: ligatures related to the equals glyph like `!=` and `===`.
+- `ss02`: ligatures related to the greater than or less than operators.
+- `ss03`: ligatures related to arrows like `->` and `=>`.
+- `ss04`: ligatures related to markup, like `</` and `/>`.
+- `ss05`: ligatures related to the F# programming language, like `|>`.
+- `ss06`: ligatures related to repeated uses of `#` such as `##` or `###`.
+- `ss07`: ligatures related to the asterisk like `***`.
+- `ss08`: ligatures related to combinations like `.=` or `.-`.
 
 You must enable discretionary ligatures first, often using the `dlig` setting. See below for editor-specific instructions.
 
 ![A visual glossary of code ligatures available in the Monaspace type system](https://github.com/githubnext/monaspace/assets/22723/49b4f802-265d-414c-94c0-ec712e3c0ecc)
 
-
 ## Desktop Installation
 
 ### MacOS
+
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into Font Book.
 
 There is also a script that automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
@@ -51,6 +50,7 @@ There is also a script that automates the deletion of all Monaspace fonts from `
 $ cd util
 $ bash ./install_macos.sh
 ```
+
 You can also use [homebrew](https://brew.sh/) as an alternative:
 
 ```bash
@@ -59,9 +59,11 @@ brew install font-monaspace
 ```
 
 ### Windows
+
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
 
 ### Linux
+
 You can manually drag the fonts from the `fonts/otf` and `fonts/variable` directory into `~/.local/share/fonts`.
 
 There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
@@ -100,12 +102,14 @@ If you only want texture healing and basic coding ligatures, add the following l
 
 > [!NOTE]
 > This setting is unavailable from the graphical settings editor; you must create it manually.
+> <br> To access the `settings.json` file, enter the following command in Visual Studio Code: `Preferences: Open User Settings (JSON)`
 
 If you want more coding ligatures, you must customize that setting to specify all the sets you wish to enable:
 
 ```json
   "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
 ```
+
 > [!NOTE]
 > You must start the setting with `'calt', 'liga', 'dlig'`! The stylistic sets will only have an effect by enabling contextual alternates, ligatures, and discretionary ligatures.
 
@@ -139,7 +143,6 @@ Please file issues in this repo. Monaspace is not a supported product; do not co
 
 Monaspace was made to improve all code for all developers. [GitHub Next](https://githubnext.com) set out on this journey in 2022, and we were fortunate to find a type foundry that shares our passion for improving software in [Lettermatic](https://lettermatic.com/). The result is a marriage of form and function that opens the door to new developer experiences, and that would not have been possible without the domain expertise and skill of the Lettermatic team and the time they invested in working with GitHub Next on figuring out how typography ought to work for code.
 
-
 #### Lettermatic
 
 ![lettermatic logo](https://github.com/githubnext/monaspace/assets/22723/36280a3a-ed6f-45a9-8e74-44c9d005794d)
@@ -158,6 +161,7 @@ Monaspace was made to improve all code for all developers. [GitHub Next](https:/
 - [Idan Gazit](https://github.com/idan)
 
 #### Special Thanks To
+
 - Anna Thomas
 - Marg Chronister
 - Jane Solomon
