@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# ensure that ~/.local/share/fonts exists
+mkdir -p ~/.local/share/fonts
+
 # remove all fonts from ~/.local/share/fonts that start with "Monaspace"
 rm -rf ~/.local/share/fonts/Monaspace*
 
