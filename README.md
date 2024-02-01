@@ -87,6 +87,12 @@ Set the font family:
     "editor.fontFamily": "'Monaspace Neon', monospace",
 ```
 
+Set an alternate family for inline suggestions:
+
+```json
+    "editor.inlineSuggest.fontFamily": "'Monaspace Krypton', monospace",
+```
+
 > [!NOTE]
 > Variable fonts are not yet well-supported in VS Code, and it is not yet possible to mix multiple fonts. Stay tuned, we're talking with the VS Code team about it!
 
@@ -104,7 +110,7 @@ If you only want texture healing and basic coding ligatures, add the following l
 If you want more coding ligatures, you must customize that setting to specify all the sets you wish to enable:
 
 ```json
-  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
+  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
 ```
 > [!NOTE]
 > You must start the setting with `'calt', 'liga', 'dlig'`! The stylistic sets will only have an effect by enabling contextual alternates, ligatures, and discretionary ligatures.
@@ -112,7 +118,7 @@ If you want more coding ligatures, you must customize that setting to specify al
 If you want coding ligatures but do _not_ want texture healing, you can omit the `calt` setting:
 
 ```json
-  "editor.fontLigatures": "'liga', 'dlig', 'ss01', 'ss02', ... (more stylistic sets) ...",
+  "editor.fontLigatures": "'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
 ```
 
 ## Contribution
