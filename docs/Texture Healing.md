@@ -4,7 +4,7 @@
 
 # Intro
 
-Texture Healing is a feature created for the Github Type System series of Monospace fonts, by the team at Lettermatic. These fonts are open-sourced, and so we want to make sure that any future open-source contributors have the opportunity to add their own texture-healed glyphs. The source files for this project are being distributed in Glyphs 3 file format (.glyphs), so this guide assumes you will be using Glyphs.app. However the underlying concepts can be implemented in any modern font editor.
+Texture Healing is a feature created for the GitHub Type System series of Monospace fonts, by the team at Lettermatic. These fonts are open-sourced, and so we want to make sure that any future open-source contributors have the opportunity to add their own texture-healed glyphs. The source files for this project are being distributed in Glyphs 3 file format (.glyphs), so this guide assumes you will be using Glyphs.app. However the underlying concepts can be implemented in any modern font editor.
 
 # What is the inciting problem?
 

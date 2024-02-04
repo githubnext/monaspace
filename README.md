@@ -30,7 +30,7 @@ There are eight groups of coding ligatures, separated into stylistic sets. You m
 * `ss02`: ligatures related to the greater than or less than operators.
 * `ss03`: ligatures related to arrows like `->` and `=>`.
 * `ss04`: ligatures related to markup, like `</` and `/>`. 
-* `ss05`: ligatures related to the F♯ programming language, like `|>`.
+* `ss05`: ligatures related to the F# programming language, like `|>`.
 * `ss06`: ligatures related to repeated uses of `#` such as `##` or `###`.
 * `ss07`: ligatures related to the asterisk like `***`.
 * `ss08`: ligatures related to combinations like `.=` or `.-`.
