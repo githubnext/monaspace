@@ -22,7 +22,22 @@ The variable fonts have one file per family (Neon, Argon, etc.). Modern and conv
 
 The static fonts have one file per cut, per family. The variable axes have named stops for each axis, like `light` or `bold` for weight, `italic` for italics, and `semiwide` or `wide` for width. The combinatorial explosion of all these properties means the complete installation of static fonts involves hundreds of font files. But for situations that don't yet support variable fonts, the static builds give you a wide variety of stops throughout the range of each axis.
 
+## Texture Healing
+
+Monaspace pioneered the technique of "texture healing" for monospaced fonts: 
+
+![Texture Healing Example](<docs/images/ReadmeTextureHealing.png>)
+
+Texture healing is enabled when the `calt` font feature setting is turned on in your editor. The location for this setting varies across applications, and not all applications support it. See the [Editors](#editors) section below for specific guidance.
+
+You can read more about how it works on the [Monaspace website](http://monaspace.githubnext.com), and learn how it is implemented in the [documentation](https://github.com/githubnext/monaspace/blob/main/docs/Texture%20Healing.md).
+
 ## Coding Ligatures
+
+> [!WARNING]
+> Ligature handling has changed significantly in Monaspace v1.1. If you're upgrading from Monaspace v1.0, see the [release notes for guidance on how to alter your editor settings](https://github.com/githubnext/monaspace/releases/tag/v1.100).
+
+The `liga` font feature enables customized spacing of repeating characters, like `///` or `||`. It is designed to avoid activating inside longer sequences like `////`.
 
 There are eight groups of coding ligatures, separated into stylistic sets. You may be able to enable or disable individual sets selectively:
 
@@ -31,13 +46,18 @@ There are eight groups of coding ligatures, separated into stylistic sets. You m
 * `ss03`: ligatures related to arrows like `->` and `=>`.
 * `ss04`: ligatures related to markup, like `</` and `/>`. 
 * `ss05`: ligatures related to the F# programming language, like `|>`.
-* `ss06`: ligatures related to repeated uses of `#` such as `##` or `###`.
-* `ss07`: ligatures related to the asterisk like `***`.
-* `ss08`: ligatures related to combinations like `.=` or `.-`.
+* `ss06`: ligatures related to repeated uses of `#`, `+`, and `&`.
+* `ss07`: ligatures related to colons like `::` or `=:=`.
+* `ss08`: ligatures related to combinations of periods with other glyphs like `..=` or `.-`.
 
-You must enable discretionary ligatures first, often using the `dlig` setting. See below for editor-specific instructions.
 
-![A visual glossary of code ligatures available in the Monaspace type system](https://github.com/githubnext/monaspace/assets/22723/49b4f802-265d-414c-94c0-ec712e3c0ecc)
+## Character Variants
+
+Specific characters have variants that you can optionally enable:
+
+* `cv30`: Enable the older asterisk as shipped in Monaspace 1.0, which was vertically aligned closer to the top of the space.
+* `cv60`: forces the `<=` pair to render in a fashion that matches `=>` instead of swapping for `≤`.
+* `cv61`: enables the optional closed square ligature for `[]`. This can be distracting when authoring arrays in many editors, because they automatically insert the closing bracket, which immediately produces the closed square ligature upon typing the open bracket.
 
 
 ## Desktop Installation
@@ -81,6 +101,9 @@ As with the desktop fonts, they are available in variable and static versions.
 
 ### Visual Studio Code
 
+> [!WARNING]
+> Ligature handling has changed significantly in Monaspace v1.1. If you're upgrading from Monaspace v1.0, see the [release notes for guidance on how to alter your editor settings](https://github.com/githubnext/monaspace/releases/tag/v1.100).
+
 Set the font family:
 
 ```json
@@ -96,29 +119,19 @@ Set an alternate family for inline suggestions:
 > [!NOTE]
 > Variable fonts are not yet well-supported in VS Code, and it is not yet possible to mix multiple fonts. Stay tuned, we're talking with the VS Code team about it!
 
-The same setting controls texture healing and coding ligatures. You can enable either or both.
-
-If you only want texture healing and basic coding ligatures, add the following line to your `settings.json`:
-
-```json
-  "editor.fontLigatures": true,
-```
+You must use the `editor.fontLigatures` setting to enable the various features (texture healing, ligatures, and character variants). The setting is a comma-separated list of font features to be enabled.
 
 > [!NOTE]
 > This setting is unavailable from the graphical settings editor; you must create it manually.
 
-If you want more coding ligatures, you must customize that setting to specify all the sets you wish to enable:
+- `calt`: enables texture healing
+- `liga`: enables dynamic spacing for certain repeating character patterns like `///`
+- `ss01`, `ss02`, etc: enables the specific stylistic set
+- `cv30`, `cv60`, etc: enables the specific character variants
 
+Putting it all together, a setting string which enables everything but the character variants would look like this:
 ```json
-  "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
-```
-> [!NOTE]
-> You must start the setting with `'calt', 'liga', 'dlig'`! The stylistic sets will only have an effect by enabling contextual alternates, ligatures, and discretionary ligatures.
-
-If you want coding ligatures but do _not_ want texture healing, you can omit the `calt` setting:
-
-```json
-  "editor.fontLigatures": "'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
+  "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
 ```
 
 ## Contribution
