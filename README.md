@@ -113,7 +113,7 @@ As with the desktop fonts, they are available in variable and static versions.
 ### Visual Studio Code
 
 > [!WARNING]
-> Ligature handling has changed significantly in Monaspace v1.1. If you're upgrading from Monaspace v1.0, see the [release notes for guidance on how to alter your editor settings](https://github.com/githubnext/monaspace/releases/tag/v1.100).
+> Ligature handling has changed significantly in Monaspace v1.1. If you're upgrading from Monaspace v1.0, see the release notes ([v1.100](https://github.com/githubnext/monaspace/releases/tag/v1.100), [v1.101](https://github.com/githubnext/monaspace/releases/tag/v1.101)) for guidance on how to alter your editor settings.
 
 Set the font family:
 
