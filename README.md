@@ -51,7 +51,7 @@ There are eight groups of coding ligatures, separated into stylistic sets. You m
 * `ss08`: ligatures related to combinations of periods with other glyphs like `..=` or `.-`.
 * `ss09`: ligatures related to combinations of the greater/less than and equals signs, like  `<=>`,`>>`, and `=<<`.
 
-👉 You can see an interactive display of all the ligatures [on the Monaspace website](http://localhost:3000/#code-ligatures)
+👉 You can see an interactive display of all the ligatures [on the Monaspace website](http://monaspace.githubnext.com/#code-ligatures)
 
 ## Character Variants
 
