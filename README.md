@@ -43,7 +43,7 @@ There are eight groups of coding ligatures, separated into stylistic sets. You m
 
 * `ss01`: ligatures related to the equals glyph like `!=` and `===`.
 * `ss02`: ligatures for greater/less or equal (`<=`, `>=`).
-* `ss03`: ligatures related to the greater than/less than symbols like `>>` and `<=`.
+* `ss03`: ligatures related to arrows like `->` and `~>`.
 * `ss04`: ligatures related to markup, like `</` and `/>`. 
 * `ss05`: ligatures related to the F# programming language, like `|>`.
 * `ss06`: ligatures related to repeated uses of `#`, `+`, and `&`.
