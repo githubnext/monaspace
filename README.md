@@ -35,21 +35,23 @@ You can read more about how it works on the [Monaspace website](http://monaspace
 ## Coding Ligatures
 
 > [!WARNING]
-> Ligature handling has changed significantly in Monaspace v1.1. If you're upgrading from Monaspace v1.0, see the [release notes for guidance on how to alter your editor settings](https://github.com/githubnext/monaspace/releases/tag/v1.100).
+> Ligature handling has changed significantly in Monaspace v1.1 and v1.101. If you're upgrading, see the [release notes for guidance on how to alter your editor settings](https://github.com/githubnext/monaspace/releases/tag/v1.100).
 
 The `liga` font feature enables customized spacing of repeating characters, like `///` or `||`. It is designed to avoid activating inside longer sequences like `////`.
 
 There are eight groups of coding ligatures, separated into stylistic sets. You may be able to enable or disable individual sets selectively:
 
 * `ss01`: ligatures related to the equals glyph like `!=` and `===`.
-* `ss02`: ligatures related to the greater than or less than operators.
-* `ss03`: ligatures related to arrows like `->` and `=>`.
+* `ss02`: ligatures for greater/less or equal (`<=`, `>=`).
+* `ss03`: ligatures related to the greater than/less than symbols like `>>` and `<=`.
 * `ss04`: ligatures related to markup, like `</` and `/>`. 
 * `ss05`: ligatures related to the F# programming language, like `|>`.
 * `ss06`: ligatures related to repeated uses of `#`, `+`, and `&`.
 * `ss07`: ligatures related to colons like `::` or `=:=`.
 * `ss08`: ligatures related to combinations of periods with other glyphs like `..=` or `.-`.
+* `ss09`: ligatures related to combinations of the greater/less than and equals signs, like  `<=>`,`>>`, and `=<<`.
 
+👉 You can see an interactive display of all the ligatures [on the Monaspace website](http://localhost:3000/#code-ligatures)
 
 ## Character Variants
 
@@ -62,14 +64,24 @@ Specific characters have variants that you can optionally enable:
 
 ## Desktop Installation
 
+### Upgrading
+
+Font caching on operating systems is an inscrutable mess dating back thirty years, and not something we can fix in Monaspace. Generally speaking, you should:
+
+- First delete the old fonts…
+- Then install the new fonts…
+- Then restart applications that use the fonts…
+- … and maybe restart your entire computer. 
+
+Restarting is usually the only way to be 100% sure that the underlying machinery in the operating system picks up the new fonts.
+
 ### MacOS
 You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into Font Book.
 
 There is also a script that automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
 ```bash
-$ cd util
-$ bash ./install_macos.sh
+$ bash util/install_macos.sh
 ```
 You can also use [homebrew](https://brew.sh/) as an alternative:
 
@@ -87,8 +99,7 @@ You can manually drag the fonts from the `fonts/otf` and `fonts/variable` direct
 There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
 ```bash
-$ cd util
-$ bash ./install_linux.sh
+$ bash util/install_linux.sh
 ```
 
 ### Webfonts
@@ -125,7 +136,7 @@ You must use the `editor.fontLigatures` setting to enable the various features (
 
 Putting it all together, a setting string which enables everything but the character variants would look like this:
 ```json
-  "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
+  "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
 ```
 
 ## Contribution
