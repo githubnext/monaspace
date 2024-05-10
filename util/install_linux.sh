@@ -1,4 +1,5 @@
 #!/bin/bash
+UTIL_DIR="$(dirname $0)"
 
 # ensure that ~/.local/share/fonts exists
 mkdir -p ~/.local/share/fonts
@@ -7,6 +8,8 @@ mkdir -p ~/.local/share/fonts
 rm -rf ~/.local/share/fonts/Monaspace*
 
 mkdir -p ~/.local/share/fonts/Monaspace/
+
+cd "$UTIL_DIR/.."
 
 # copy all fonts from ./otf to ~/.local/share/fonts
 cp ./fonts/otf/* ~/.local/share/fonts/Monaspace/
