@@ -1268,11 +1268,11 @@ value = 400;
 },
 {
 name = winAscent;
-value = 1878;
+value = 2011;
 },
 {
 name = winDescent;
-value = 522;
+value = 786;
 }
 );
 iconName = Light;
@@ -1339,11 +1339,11 @@ value = 400;
 },
 {
 name = winAscent;
-value = 1878;
+value = 2011;
 },
 {
 name = winDescent;
-value = 522;
+value = 786;
 }
 );
 id = "B4DB2FCE-8F13-48AA-B57C-2BFA4BDFBB5B";
@@ -1409,11 +1409,11 @@ value = 400;
 },
 {
 name = winAscent;
-value = 1878;
+value = 2011;
 },
 {
 name = winDescent;
-value = 522;
+value = 786;
 }
 );
 id = "44BD81D2-59FE-4749-9CEB-CE9A9BBF7E1D";
@@ -1479,11 +1479,11 @@ value = 400;
 },
 {
 name = winAscent;
-value = 1878;
+value = 2011;
 },
 {
 name = winDescent;
-value = 522;
+value = 786;
 }
 );
 id = "C51B4FD0-B2BF-40BC-847B-12841EA1BD5E";
@@ -1549,11 +1549,11 @@ value = 400;
 },
 {
 name = winAscent;
-value = 1878;
+value = 2011;
 },
 {
 name = winDescent;
-value = 522;
+value = 786;
 }
 );
 iconName = Light;
@@ -1621,11 +1621,11 @@ value = 400;
 },
 {
 name = winAscent;
-value = 1878;
+value = 2011;
 },
 {
 name = winDescent;
-value = 522;
+value = 786;
 }
 );
 id = "7F8FBB26-3B45-4F09-894A-43C94E46FA86";
@@ -1692,11 +1692,11 @@ value = 400;
 },
 {
 name = winAscent;
-value = 1878;
+value = 2011;
 },
 {
 name = winDescent;
-value = 522;
+value = 786;
 }
 );
 id = "32C81056-0B67-48FF-9423-60F4119D1D79";
@@ -1763,11 +1763,11 @@ value = 400;
 },
 {
 name = winAscent;
-value = 1878;
+value = 2011;
 },
 {
 name = winDescent;
-value = 522;
+value = 786;
 }
 );
 id = "AD62C6D0-0611-42BF-ABA7-5ADD2541426F";
