@@ -1353,27 +1353,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = hheaDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = typoDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = hheaLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
@@ -1423,27 +1423,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = hheaDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = typoDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = hheaLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
@@ -1492,27 +1492,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = hheaDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = typoDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = hheaLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
@@ -1561,27 +1561,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = hheaDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = typoDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = hheaLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
@@ -1598,6 +1598,12 @@ pos = (779,2011);
 },
 {
 pos = (765,-786);
+},
+{
+pos = (314,1930);
+},
+{
+pos = (341,-470);
 }
 );
 id = "E1CD64A1-112A-4516-A7DF-4EBEDF7D0C85";
@@ -1638,27 +1644,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = hheaDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = typoDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = hheaLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
@@ -1709,27 +1715,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = hheaDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = typoDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = hheaLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
@@ -1779,27 +1785,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = hheaDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = typoDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = hheaLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
@@ -1849,27 +1855,27 @@ axesValues = (
 customParameters = (
 {
 name = hheaAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = hheaDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoAscender;
-value = 1565;
+value = 1930;
 },
 {
 name = typoDescender;
-value = -435;
+value = -470;
 },
 {
 name = typoLineGap;
-value = 400;
+value = 0;
 },
 {
 name = hheaLineGap;
-value = 400;
+value = 0;
 },
 {
 name = winAscent;
