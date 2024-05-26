@@ -1,5 +1,5 @@
 {
-.appVersion = "3133";
+.appVersion = "3306";
 .formatVersion = 3;
 axes = (
 {
@@ -41,6 +41,14 @@ value = (
 {
 name = versionString;
 value = "Version 1.101 (Monaspace Xenon)";
+},
+{
+name = "Write lastChange";
+value = 1;
+},
+{
+name = "Write DisplayStrings";
+value = 1;
 }
 );
 date = "2024-05-08 18:00:38 +0000";
@@ -335825,19 +335833,6 @@ instanceInterpolations = {
 name = ExtraLight;
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon ExtraLight";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -335847,8 +335842,21 @@ value = "Monaspace Xenon ExtraLight";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-ExtraLight";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon ExtraLight";
 }
 );
 weightClass = 200;
@@ -335972,19 +335980,6 @@ instanceInterpolations = {
 name = Light;
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Light";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -335994,8 +335989,21 @@ value = "Monaspace Xenon Light";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-Light";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Light";
 }
 );
 weightClass = 300;
@@ -336119,19 +336127,6 @@ instanceInterpolations = {
 name = Regular;
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Regular";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -336141,8 +336136,21 @@ value = "Monaspace Xenon Regular";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-Regular";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Regular";
 }
 );
 },
@@ -336265,19 +336273,6 @@ instanceInterpolations = {
 name = Medium;
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Medium";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -336287,8 +336282,21 @@ value = "Monaspace Xenon Medium";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-Medium";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Medium";
 }
 );
 weightClass = 500;
@@ -336412,19 +336420,6 @@ instanceInterpolations = {
 name = SemiBold;
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiBold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -336434,8 +336429,21 @@ value = "Monaspace Xenon SemiBold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiBold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiBold";
 }
 );
 weightClass = 600;
@@ -336560,19 +336568,6 @@ isBold = 1;
 name = Bold;
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Bold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -336582,8 +336577,21 @@ value = "Monaspace Xenon Bold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-Bold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Bold";
 }
 );
 weightClass = 700;
@@ -336706,19 +336714,6 @@ instanceInterpolations = {
 name = ExtraBold;
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon ExtraBold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -336728,8 +336723,21 @@ value = "Monaspace Xenon ExtraBold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-ExtraBold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon ExtraBold";
 }
 );
 weightClass = 800;
@@ -336743,7 +336751,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -336857,19 +336920,6 @@ isItalic = 1;
 name = "ExtraLight Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon ExtraLight Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -336879,8 +336929,21 @@ value = "Monaspace Xenon ExtraLight Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-ExtraLightItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon ExtraLight Italic";
 }
 );
 weightClass = 200;
@@ -336894,7 +336957,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -337009,19 +337127,6 @@ isItalic = 1;
 name = "Light Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Light Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -337031,8 +337136,21 @@ value = "Monaspace Xenon Light Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-LightItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Light Italic";
 }
 );
 weightClass = 300;
@@ -337046,7 +337164,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -337161,19 +337334,6 @@ isItalic = 1;
 name = Italic;
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -337183,8 +337343,21 @@ value = "Monaspace Xenon Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-Italic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Italic";
 }
 );
 },
@@ -337197,7 +337370,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -337312,19 +337540,6 @@ isItalic = 1;
 name = "Medium Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Medium Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -337334,8 +337549,21 @@ value = "Monaspace Xenon Medium Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-MediumItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Medium Italic";
 }
 );
 weightClass = 500;
@@ -337349,7 +337577,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -337464,19 +337747,6 @@ isItalic = 1;
 name = "SemiBold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiBold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -337486,8 +337756,21 @@ value = "Monaspace Xenon SemiBold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiBoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiBold Italic";
 }
 );
 weightClass = 600;
@@ -337501,7 +337784,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -337617,19 +337955,6 @@ isItalic = 1;
 name = "Bold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Bold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -337639,8 +337964,21 @@ value = "Monaspace Xenon Bold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-BoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Bold Italic";
 }
 );
 weightClass = 700;
@@ -337654,7 +337992,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -337768,19 +338161,6 @@ isItalic = 1;
 name = "ExtraBold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon ExtraBold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -337790,8 +338170,21 @@ value = "Monaspace Xenon ExtraBold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-ExtraBoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon ExtraBold Italic";
 }
 );
 weightClass = 800;
@@ -337915,19 +338308,6 @@ instanceInterpolations = {
 name = "SemiWide ExtraLight";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide ExtraLight";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -337937,8 +338317,21 @@ value = "Monaspace Xenon SemiWide ExtraLight";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideExtraLight";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide ExtraLight";
 }
 );
 weightClass = 200;
@@ -338065,19 +338458,6 @@ instanceInterpolations = {
 name = "SemiWide Light";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide Light";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -338087,8 +338467,21 @@ value = "Monaspace Xenon SemiWide Light";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideLight";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide Light";
 }
 );
 weightClass = 300;
@@ -338215,19 +338608,6 @@ instanceInterpolations = {
 name = "SemiWide Regular";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide Regular";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -338237,8 +338617,21 @@ value = "Monaspace Xenon SemiWide Regular";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideRegular";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide Regular";
 }
 );
 widthClass = 6;
@@ -338364,19 +338757,6 @@ instanceInterpolations = {
 name = "SemiWide Medium";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide Medium";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -338386,8 +338766,21 @@ value = "Monaspace Xenon SemiWide Medium";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideMedium";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide Medium";
 }
 );
 weightClass = 500;
@@ -338514,19 +338907,6 @@ instanceInterpolations = {
 name = "SemiWide SemiBold";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide SemiBold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -338536,8 +338916,21 @@ value = "Monaspace Xenon SemiWide SemiBold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideSemiBold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide SemiBold";
 }
 );
 weightClass = 600;
@@ -338665,19 +339058,6 @@ isBold = 1;
 name = "SemiWide Bold";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide Bold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -338687,8 +339067,21 @@ value = "Monaspace Xenon SemiWide Bold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideBold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide Bold";
 }
 );
 weightClass = 700;
@@ -338813,19 +339206,6 @@ instanceInterpolations = {
 name = "SemiWide ExtraBold";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide ExtraBold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -338835,8 +339215,21 @@ value = "Monaspace Xenon SemiWide ExtraBold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideExtraBold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide ExtraBold";
 }
 );
 weightClass = 800;
@@ -338851,7 +339244,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -338966,19 +339414,6 @@ isItalic = 1;
 name = "SemiWide ExtraLight Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide ExtraLight Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -338988,8 +339423,21 @@ value = "Monaspace Xenon SemiWide ExtraLight Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideExtraLightItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide ExtraLight Italic";
 }
 );
 weightClass = 200;
@@ -339004,7 +339452,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -339121,19 +339624,6 @@ isItalic = 1;
 name = "SemiWide Light Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide Light Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -339143,8 +339633,21 @@ value = "Monaspace Xenon SemiWide Light Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideLightItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide Light Italic";
 }
 );
 weightClass = 300;
@@ -339159,7 +339662,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -339276,19 +339834,6 @@ isItalic = 1;
 name = "SemiWide Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -339298,8 +339843,21 @@ value = "Monaspace Xenon SemiWide Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide Italic";
 }
 );
 widthClass = 6;
@@ -339313,7 +339871,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -339430,19 +340043,6 @@ isItalic = 1;
 name = "SemiWide Medium Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide Medium Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -339452,8 +340052,21 @@ value = "Monaspace Xenon SemiWide Medium Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideMediumItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide Medium Italic";
 }
 );
 weightClass = 500;
@@ -339468,7 +340081,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -339585,19 +340253,6 @@ isItalic = 1;
 name = "SemiWide SemiBold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide SemiBold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -339607,8 +340262,21 @@ value = "Monaspace Xenon SemiWide SemiBold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideSemiBoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide SemiBold Italic";
 }
 );
 weightClass = 600;
@@ -339623,7 +340291,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -339741,19 +340464,6 @@ isItalic = 1;
 name = "SemiWide Bold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide Bold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -339763,8 +340473,21 @@ value = "Monaspace Xenon SemiWide Bold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideBoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide Bold Italic";
 }
 );
 weightClass = 700;
@@ -339779,7 +340502,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -339894,19 +340672,6 @@ isItalic = 1;
 name = "SemiWide ExtraBold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon SemiWide ExtraBold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -339916,8 +340681,21 @@ value = "Monaspace Xenon SemiWide ExtraBold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-SemiWideExtraBoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon SemiWide ExtraBold Italic";
 }
 );
 weightClass = 800;
@@ -340041,19 +340819,6 @@ instanceInterpolations = {
 name = "Wide ExtraLight";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide ExtraLight";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -340063,8 +340828,21 @@ value = "Monaspace Xenon Wide ExtraLight";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideExtraLight";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide ExtraLight";
 }
 );
 weightClass = 200;
@@ -340189,19 +340967,6 @@ instanceInterpolations = {
 name = "Wide Light";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide Light";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -340211,8 +340976,21 @@ value = "Monaspace Xenon Wide Light";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideLight";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide Light";
 }
 );
 weightClass = 300;
@@ -340337,19 +341115,6 @@ instanceInterpolations = {
 name = "Wide Regular";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide Regular";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -340359,8 +341124,21 @@ value = "Monaspace Xenon Wide Regular";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideRegular";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide Regular";
 }
 );
 widthClass = 7;
@@ -340484,19 +341262,6 @@ instanceInterpolations = {
 name = "Wide Medium";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide Medium";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -340506,8 +341271,21 @@ value = "Monaspace Xenon Wide Medium";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideMedium";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide Medium";
 }
 );
 weightClass = 500;
@@ -340632,19 +341410,6 @@ instanceInterpolations = {
 name = "Wide SemiBold";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide SemiBold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -340654,8 +341419,21 @@ value = "Monaspace Xenon Wide SemiBold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideSemiBold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide SemiBold";
 }
 );
 weightClass = 600;
@@ -340781,19 +341559,6 @@ isBold = 1;
 name = "Wide Bold";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide Bold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -340803,8 +341568,21 @@ value = "Monaspace Xenon Wide Bold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideBold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide Bold";
 }
 );
 weightClass = 700;
@@ -340928,19 +341706,6 @@ instanceInterpolations = {
 name = "Wide ExtraBold";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide ExtraBold";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -340950,8 +341715,21 @@ value = "Monaspace Xenon Wide ExtraBold";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideExtraBold";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide ExtraBold";
 }
 );
 weightClass = 800;
@@ -340966,7 +341744,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -341080,19 +341913,6 @@ isItalic = 1;
 name = "Wide ExtraLight Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide ExtraLight Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -341102,8 +341922,21 @@ value = "Monaspace Xenon Wide ExtraLight Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideExtraLightItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide ExtraLight Italic";
 }
 );
 weightClass = 200;
@@ -341118,7 +341951,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -341233,19 +342121,6 @@ isItalic = 1;
 name = "Wide Light Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide Light Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -341255,8 +342130,21 @@ value = "Monaspace Xenon Wide Light Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideLightItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide Light Italic";
 }
 );
 weightClass = 300;
@@ -341271,7 +342159,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -341386,19 +342329,6 @@ isItalic = 1;
 name = "Wide Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -341408,8 +342338,21 @@ value = "Monaspace Xenon Wide Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide Italic";
 }
 );
 widthClass = 7;
@@ -341423,7 +342366,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -341538,19 +342536,6 @@ isItalic = 1;
 name = "Wide Medium Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide Medium Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -341560,8 +342545,21 @@ value = "Monaspace Xenon Wide Medium Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideMediumItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide Medium Italic";
 }
 );
 weightClass = 500;
@@ -341576,7 +342574,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -341691,19 +342744,6 @@ isItalic = 1;
 name = "Wide SemiBold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide SemiBold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -341713,8 +342753,21 @@ value = "Monaspace Xenon Wide SemiBold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideSemiBoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide SemiBold Italic";
 }
 );
 weightClass = 600;
@@ -341729,7 +342782,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -341845,19 +342953,6 @@ isItalic = 1;
 name = "Wide Bold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide Bold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -341867,8 +342962,21 @@ value = "Monaspace Xenon Wide Bold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideBoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide Bold Italic";
 }
 );
 weightClass = 700;
@@ -341883,7 +342991,62 @@ axesValues = (
 customParameters = (
 {
 name = "Rename Glyphs";
-value = "f.italic=f, h.italic=h, hbar.italic=hbar, hcircumflex.italic=hcircumflex, i.italic=i, idotless.italic=idotless, iacute.italic=iacute, ibreve.italic=ibreve, icircumflex.italic=icircumflex, idieresis.italic=idieresis, idotbelow.italic=idotbelow, igrave.italic=igrave, ij.italic=ij, imacron.italic=imacron, iogonek.italic=iogonek, l.italic=l, lacute.italic=lacute, lcaron.italic=lcaron, lcommaaccent.italic=lcommaaccent, ldot.italic=ldot, lslash.italic=lslash, m.italic=m, n.italic=n, nacute.italic=nacute, ncaron.italic=ncaron, ncommaaccent.italic=ncommaaccent, nhookleft.italic=nhookleft, ntilde.italic=ntilde, eng.italic=eng, m.italic.both=m.both, f.italic.left=f.left, i.italic.left=i.left, l.italic.left=l.left, m.italic.left=m.left, f.italic.right=f.right, i.italic.right=i.right, l.italic.right=l.right, m.italic.right=m.right, dieresiscomb.italic=dieresiscomb, dotaccentcomb.italic=dotaccentcomb, gravecomb.italic=gravecomb, acutecomb.italic=acutecomb, caroncomb.alt.italic=caroncomb.alt, circumflexcomb.italic=circumflexcomb, caroncomb.italic=caroncomb, brevecomb.italic=brevecomb, tildecomb.italic=tildecomb, macroncomb.italic=macroncomb, dotbelowcomb.italic=dotbelowcomb, commaaccentcomb.italic=commaaccentcomb, ogonekcomb.italic=ogonekcomb, gravecomb.case.italic=gravecomb.case, acutecomb.case.italic=acutecomb.case, circumflexcomb.case.italic=circumflexcomb.case";
+value = (
+"f.italic=f",
+"h.italic=h",
+"hbar.italic=hbar",
+"hcircumflex.italic=hcircumflex",
+"i.italic=i",
+"idotless.italic=idotless",
+"iacute.italic=iacute",
+"ibreve.italic=ibreve",
+"icircumflex.italic=icircumflex",
+"idieresis.italic=idieresis",
+"idotbelow.italic=idotbelow",
+"igrave.italic=igrave",
+"ij.italic=ij",
+"imacron.italic=imacron",
+"iogonek.italic=iogonek",
+"l.italic=l",
+"lacute.italic=lacute",
+"lcaron.italic=lcaron",
+"lcommaaccent.italic=lcommaaccent",
+"ldot.italic=ldot",
+"lslash.italic=lslash",
+"m.italic=m",
+"n.italic=n",
+"nacute.italic=nacute",
+"ncaron.italic=ncaron",
+"ncommaaccent.italic=ncommaaccent",
+"nhookleft.italic=nhookleft",
+"ntilde.italic=ntilde",
+"eng.italic=eng",
+"m.italic.both=m.both",
+"f.italic.left=f.left",
+"i.italic.left=i.left",
+"l.italic.left=l.left",
+"m.italic.left=m.left",
+"f.italic.right=f.right",
+"i.italic.right=i.right",
+"l.italic.right=l.right",
+"m.italic.right=m.right",
+"dieresiscomb.italic=dieresiscomb",
+"dotaccentcomb.italic=dotaccentcomb",
+"gravecomb.italic=gravecomb",
+"acutecomb.italic=acutecomb",
+"caroncomb.alt.italic=caroncomb.alt",
+"circumflexcomb.italic=circumflexcomb",
+"caroncomb.italic=caroncomb",
+"brevecomb.italic=brevecomb",
+"tildecomb.italic=tildecomb",
+"macroncomb.italic=macroncomb",
+"dotbelowcomb.italic=dotbelowcomb",
+"commaaccentcomb.italic=commaaccentcomb",
+"ogonekcomb.italic=ogonekcomb",
+"gravecomb.case.italic=gravecomb.case",
+"acutecomb.case.italic=acutecomb.case",
+"circumflexcomb.case.italic=circumflexcomb.case"
+);
 },
 {
 name = "Name Table Entry";
@@ -341997,19 +343160,6 @@ isItalic = 1;
 name = "Wide ExtraBold Italic";
 properties = (
 {
-key = familyNames;
-values = (
-{
-language = dflt;
-value = "Monaspace Xenon";
-}
-);
-},
-{
-key = postscriptFullName;
-value = "Monaspace Xenon Wide ExtraBold Italic";
-},
-{
 key = compatibleFullNames;
 values = (
 {
@@ -342019,8 +343169,21 @@ value = "Monaspace Xenon Wide ExtraBold Italic";
 );
 },
 {
+key = familyNames;
+values = (
+{
+language = dflt;
+value = "Monaspace Xenon";
+}
+);
+},
+{
 key = postscriptFontName;
 value = "MonaspaceXenon-WideExtraBoldItalic";
+},
+{
+key = postscriptFullName;
+value = "Monaspace Xenon Wide ExtraBold Italic";
 }
 );
 weightClass = 800;
@@ -342049,15 +343212,6 @@ type = "italic angle";
 );
 properties = (
 {
-key = sampleTexts;
-values = (
-{
-language = dflt;
-value = "printf(\"Hello, Monaspace Xenon!\")";
-}
-);
-},
-{
 key = designers;
 values = (
 {
@@ -342071,8 +343225,26 @@ key = designerURL;
 value = "https://lettermatic.com";
 },
 {
+key = licenses;
+values = (
+{
+language = dflt;
+value = "SIL Open Font License 1.1 https://github.com/githubnext/monaspace/blob/main/LICENSE";
+}
+);
+},
+{
 key = manufacturerURL;
 value = "https://lettermatic.com";
+},
+{
+key = sampleTexts;
+values = (
+{
+language = dflt;
+value = "printf(\"Hello, Monaspace Xenon!\")";
+}
+);
 },
 {
 key = trademarks;
@@ -342080,15 +343252,6 @@ values = (
 {
 language = dflt;
 value = "Copyright 2023 GitHub, Inc. (https://github.com/githubnext/monaspace), with Reserved Font Names 'Monaspace', 'Monaspace Argon', 'Monaspace Neon', 'Monaspace Xenon', 'Monaspace Radon', and 'Monaspace Krypton'.";
-}
-);
-},
-{
-key = licenses;
-values = (
-{
-language = dflt;
-value = "SIL Open Font License 1.1 https://github.com/githubnext/monaspace/blob/main/LICENSE";
 }
 );
 }
