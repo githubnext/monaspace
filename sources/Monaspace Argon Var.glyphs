@@ -49,6 +49,10 @@ value = 0;
 {
 name = "Write DisplayStrings";
 value = 0;
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2024-05-08 17:29:24 +0000";
