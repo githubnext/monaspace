@@ -1,41 +1,28 @@
 #!/bin/bash
 
-set -e  # Exit immediately if a command exits with a non-zero status
-set -u  # Treat unset variables as an error and exit immediately
-set -o pipefail  # Return the exit status of the last command in the pipeline that failed
+# Set the current user
+USER=$(logname)
+echo "Current user is $USER"
 
-echo "Starting font installation script..."
+# Set the target font directory
+TARGET_DIR="/home/$USER/.local/share/fonts/Monaspace"
 
-# Ensure that ~/.local/share/fonts exists
-echo "Creating directory: ~/.local/share/fonts"
-mkdir -p ~/.local/share/fonts
+# Create the ~/.local/share/fonts/ directory if it doesn't exist
+mkdir -p "/home/$USER/.local/share/fonts"
 
-# Remove all fonts from ~/.local/share/fonts that start with "Monaspace"
-echo "Removing existing Monaspace fonts from ~/.local/share/fonts"
-rm -rf ~/.local/share/fonts/Monaspace*
-
-# Recreate the Monaspace directory
-echo "Creating directory: ~/.local/share/fonts/Monaspace/"
-mkdir -p ~/.local/share/fonts/Monaspace/
-
-# Copy all fonts from ./otf to ~/.local/share/fonts/Monaspace/
-if [ -d "./fonts/otf" ]; then
-    echo "Copying fonts from ./fonts/otf/ to ~/.local/share/fonts/Monaspace/"
-    cp -v ./fonts/otf/* ~/.local/share/fonts/Monaspace/ || echo "No files to copy from ./fonts/otf"
-else
-    echo "Directory ./fonts/otf does not exist"
+# Remove the Monaspace directory if it exists
+if [ -d "$TARGET_DIR" ]; then
+  rm -rf "$TARGET_DIR"
 fi
 
-# Copy variable fonts from ./variable to ~/.local/share/fonts/Monaspace/
-if [ -d "./fonts/variable" ]; then
-    echo "Copying fonts from ./fonts/variable/ to ~/.local/share/fonts/Monaspace/"
-    cp -v ./fonts/variable/* ~/.local/share/fonts/Monaspace/ || echo "No files to copy from ./fonts/variable"
-else
-    echo "Directory ./fonts/variable does not exist"
-fi
+# Create the Monaspace directory
+mkdir -p "$TARGET_DIR"
 
-# Build font information caches
-echo "Rebuilding font information caches with fc-cache -f"
-fc-cache -f
+# Copy fonts from the local repository to the target directory
+cp -r ./fonts/otf/* "$TARGET_DIR/"
+cp -r ./fonts/variable/* "$TARGET_DIR/"
 
-echo "Font installation completed successfully."
+# Update the font cache
+fc-cache -fv
+
+echo "Fonts copied to $TARGET_DIR and font cache updated."
