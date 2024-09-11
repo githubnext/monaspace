@@ -144,25 +144,25 @@ Putting it all together, a setting string which enables everything but the chara
 Set the font family:
 
 ```json
-  "buffer_font_family": "Monaspace Neon",
+"buffer_font_family": "Monaspace Neon",
 ```
 
 You must use the `buffer_font_features` setting to enable the various features (texture healing, ligatures, and character variants). The setting is a key-value dictionary of font features to be enabled or disabled.
 
 ```json
-  "buffer_font_features": {
+"buffer_font_features": {
     "calt": true,
     "liga": true,
     "ss01": true,
     "ss02": true,
     "ss03": true,
     "ss04": true,
-    "ss05": false,
+    "ss05": true,
     "ss06": true,
     "ss07": true,
-    "ss08": false,
+    "ss08": true,
     "ss09": true
-  }
+}
 ```
 
 ## Contribution
