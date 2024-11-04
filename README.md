@@ -81,7 +81,7 @@ You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directo
 There is also a script that automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
 ```bash
-$ bash util/install_macos.sh
+$ ./util/install_macos.sh
 ```
 You can also use [homebrew](https://brew.sh/) as an alternative:
 
@@ -99,7 +99,7 @@ You can manually drag the fonts from the `fonts/otf` and `fonts/variable` direct
 There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
 ```bash
-$ bash util/install_linux.sh
+$ ./util/install_linux.sh
 ```
 
 ### Webfonts
