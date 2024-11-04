@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 origin=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd) || exit
 
 # remove all fonts from ~/Library/Fonts that start with "Monaspace"
