@@ -1,18 +1,28 @@
 #!/bin/bash
 
-# ensure that ~/.local/share/fonts exists
-mkdir -p ~/.local/share/fonts
+# Set the current user
+USER=$(logname)
+echo "Current user is $USER"
 
-# remove all fonts from ~/.local/share/fonts that start with "Monaspace"
-rm -rf ~/.local/share/fonts/Monaspace*
+# Set the target font directory
+TARGET_DIR="/home/$USER/.local/share/fonts/Monaspace"
 
-mkdir -p ~/.local/share/fonts/Monaspace/
+# Create the ~/.local/share/fonts/ directory if it doesn't exist
+mkdir -p "/home/$USER/.local/share/fonts"
 
-# copy all fonts from ./otf to ~/.local/share/fonts
-cp ./fonts/otf/* ~/.local/share/fonts/Monaspace/
+# Remove the Monaspace directory if it exists
+if [ -d "$TARGET_DIR" ]; then
+  rm -rf "$TARGET_DIR"
+fi
 
-# copy variable fonts from ./variable to ~/.local/share/fonts
-cp ./fonts/variable/* ~/.local/share/fonts/Monaspace/
+# Create the Monaspace directory
+mkdir -p "$TARGET_DIR"
 
-# Build font information caches
-fc-cache -f
+# Copy fonts from the local repository to the target directory
+cp -r ./fonts/otf/* "$TARGET_DIR/"
+cp -r ./fonts/variable/* "$TARGET_DIR/"
+
+# Update the font cache
+fc-cache -fv
+
+echo "Fonts copied to $TARGET_DIR and font cache updated."
