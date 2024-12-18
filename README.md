@@ -83,11 +83,11 @@ There is also a script that automates the deletion of all Monaspace fonts from `
 ```bash
 $ bash util/install_macos.sh
 ```
-You can also use [homebrew](https://brew.sh/) as an alternative:
+
+You can also use [Homebrew](https://brew.sh/) as an alternative:
 
 ```bash
-brew tap homebrew/cask-fonts
-brew install font-monaspace
+brew install --cask font-monaspace
 ```
 
 ### Windows
