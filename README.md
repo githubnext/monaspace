@@ -139,6 +139,32 @@ Putting it all together, a setting string which enables everything but the chara
   "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'",
 ```
 
+### Zed
+
+Set the font family:
+
+```json
+"buffer_font_family": "Monaspace Neon",
+```
+
+You must use the `buffer_font_features` setting to enable the various features (texture healing, ligatures, and character variants). The setting is a key-value dictionary of font features to be enabled or disabled.
+
+```json
+"buffer_font_features": {
+    "calt": true,
+    "liga": true,
+    "ss01": true,
+    "ss02": true,
+    "ss03": true,
+    "ss04": true,
+    "ss05": true,
+    "ss06": true,
+    "ss07": true,
+    "ss08": true,
+    "ss09": true
+}
+```
+
 ## Contribution
 
 There's no formal contribution guide yet! If you're interested in contributing to the typefaces, you should read the [Texture Healing](https://github.com/githubnext/monaspace/blob/main/docs/Texture%20Healing.md) guide, as it explains how to produce the necessary alternate glyphs.
