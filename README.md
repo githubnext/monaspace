@@ -13,7 +13,7 @@ Letters on a grid is how we see our code. Why not make those letters better?
 
 ## Overview
 
-Monaspace is available in three distinct variations. You can install them both side-by-side; their family names are distinct. For example:
+Monaspace is five interchangable type families, each of which is packaged into three distinct formats. You can install all of them side-by-side; their family names are distinct by family and format. For example:
 
 - `Monaspace _____`: the static family.
 - `Monaspace _____ Var` or `VF`: the variable family
@@ -68,6 +68,7 @@ There are eight groups of coding ligatures, separated into stylistic sets. You m
 * `ss07`: ligatures related to colons like `::` or `=:=`.
 * `ss08`: ligatures related to combinations of periods with other glyphs like `..=` or `.-`.
 * `ss09`: ligatures related to combinations of the greater/less than and equals signs, like  `<=>`,`>>`, and `=<<`.
+* `ss10`: other tags, like `#[` and `#(`
 
 👉 You can see an interactive display of all the ligatures [on the Monaspace website](http://monaspace.githubnext.com/#code-ligatures)
 
@@ -121,7 +122,7 @@ Font caching on operating systems is an inscrutable mess dating back thirty year
 Restarting is usually the only way to be 100% sure that the underlying machinery in the operating system picks up the new fonts.
 
 ### MacOS
-You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into Font Book.
+You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fonts/frozen` directories into Font Book.
 
 There is also a script that automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
@@ -136,10 +137,10 @@ brew install --cask font-monaspace
 ```
 
 ### Windows
-You can manually drag the fonts from the `fonts/otf` or `fonts/variable` directory into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
+You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fonts/frozen` directories into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
 
 ### Linux
-You can manually drag the fonts from the `fonts/otf` and `fonts/variable` directory into `~/.local/share/fonts`.
+You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fonts/frozen` directories into `~/.local/share/fonts`.
 
 There is also a script which automates the deletion of all Monaspace fonts from `~/.local/share/fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
