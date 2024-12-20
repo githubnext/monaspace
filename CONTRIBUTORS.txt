@@ -4,3 +4,4 @@ Danelle Cheney <danelle@lettermatic.com>
 Idan Gazit <idan@github.com>
 Cole Bemis <colebemis@github.com>
 Amelia Wattenberger <wattenberger@github.com>
+Krzysztof Cieślak <krzysztof-cieslak@github.com>

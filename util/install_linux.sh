@@ -14,5 +14,8 @@ cp ./fonts/otf/* ~/.local/share/fonts/Monaspace/
 # copy variable fonts from ./variable to ~/.local/share/fonts
 cp ./fonts/variable/* ~/.local/share/fonts/Monaspace/
 
+# copy frozen fonts from ./frozen to ~/.local/share/fonts
+cp ./fonts/frozen/* ~/.local/share/fonts/Monaspace/
+
 # Build font information caches
 fc-cache -f
