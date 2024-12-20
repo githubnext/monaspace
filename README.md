@@ -57,7 +57,7 @@ There is such a broad variety of environments and terminals and often solving fo
 
 The `liga` font feature enables customized spacing of repeating characters, like `///` or `||`. It is designed to avoid activating inside longer sequences like `////`.
 
-There are eight groups of coding ligatures, separated into stylistic sets. You may be able to enable or disable individual sets selectively:
+There are ten groups of coding ligatures, separated into stylistic sets. You may be able to enable or disable individual sets selectively:
 
 * `ss01`: ligatures related to the equals glyph like `!=` and `===`.
 * `ss02`: ligatures for greater/less or equal (`<=`, `>=`).
@@ -104,7 +104,7 @@ Specific characters have variants that you can optionally enable using the `cvNN
 
 ## Special Characters Galore
 
-In addition to the ligatures, character variants, and Nerd Fonts, Monaspace includes a wealth of characters.
+In addition to the ligatures, character variants, and Nerd Fonts, Monaspace includes a wealth of special characters.
 
 ![Special Characters](https://github.com/user-attachments/assets/c925585b-db09-45e2-ac75-911e89419a47)
 
@@ -154,7 +154,7 @@ All files with a `.woff` or `.woff2` suffix are intended for use on the web. You
 
 As with the desktop fonts, they are available in variable and static versions.
 
-There are no "frozen" webfonts. You can control Opentype features on the web using the [`font-feature-settings`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings) CSS property.
+The webfonts do not come in a "frozen" format; you can easily control Opentype features on the web using the [`font-feature-settings`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings) CSS property.
 
 ## Editors
 
