@@ -244,3 +244,8 @@ Monaspace was made to improve all code for all developers. [GitHub Next](https:/
 - Anna Thomas
 - Marg Chronister
 - Jane Solomon
+
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=githubnext/monaspace&type=Date)](https://star-history.com/#githubnext/monaspace&Date)
