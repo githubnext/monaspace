@@ -17,7 +17,11 @@ async function findFonts (src: string): Promise<WalkEntry[]> {
 
 function getDstPath (font: WalkEntry): string {
   const { name, ext, base } = parse(font.path);
-  if (name.match(/Var(VF)?$/) ) {
+  if (name.match(/Frozen/)) {
+    // frozen fonts
+    return `${dst}/fonts/frozen/${name}${ext}`
+  }
+  else if (name.match(/Var(VF)?$/) ) {
     // web variable fonts (woff and woff2)
     if (ext.match(/\.woff2?/)) {
       return `${dst}/fonts/webfonts/${name}[wght,wdth,slnt]${ext}`
