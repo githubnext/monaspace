@@ -173,6 +173,12 @@ Set the font family:
     "editor.fontFamily": "'Monaspace Neon', monospace",
 ```
 
+Set an alternate family for inline suggestions:
+
+```json
+    "editor.inlineSuggest.fontFamily": "'Monaspace Krypton', monospace",
+```
+
 > [!NOTE]
 > Variable fonts are not yet well-supported in VS Code, and it is not yet possible to mix multiple fonts. Stay tuned, we're talking with the VS Code team about it!
 
