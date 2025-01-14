@@ -174,7 +174,9 @@ Set the font family:
 ```
 
 > [!NOTE]
-> Variable fonts are not yet well-supported in VS Code, and it is not yet possible to mix multiple fonts. Stay tuned, we're talking with the VS Code team about it!
+> Variable fonts are not yet well-supported in VS Code, and it is not yet possible to mix multiple fonts. Stay tuned, we're talking with the VS Code team about it![^vscode-tracking]
+
+[^vscode-tracking]: See [microsoft/vscode#147067](https://github.com/microsoft/vscode/issues/147067) and [microsoft/vscode#237346](https://github.com/microsoft/vscode/issues/237346) for progress VS Code support for variable and multiple fonts.
 
 You must use the `editor.fontLigatures` setting to enable the various features (texture healing, ligatures, and character variants). The setting is a comma-separated list of font features to be enabled.
 
