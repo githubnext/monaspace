@@ -25,7 +25,7 @@ The static fonts have one file per cut, per family. The variable axes have named
 
 ## Texture Healing
 
-Monaspace pioneered the technique of "texture healing" for monospaced fonts: 
+Monaspace pioneered the technique of "texture healing" for monospaced fonts:
 
 ![Texture Healing Example](<docs/images/ReadmeTextureHealing.png>)
 
@@ -62,7 +62,7 @@ There are ten groups of coding ligatures, separated into stylistic sets. You may
 * `ss01`: ligatures related to the equals glyph like `!=` and `===`.
 * `ss02`: ligatures for greater/less or equal (`<=`, `>=`).
 * `ss03`: ligatures related to arrows like `->` and `~>`.
-* `ss04`: ligatures related to markup, like `</` and `/>`. 
+* `ss04`: ligatures related to markup, like `</` and `/>`.
 * `ss05`: ligatures related to the F# programming language, like `|>`.
 * `ss06`: ligatures related to repeated uses of `#`, `+`, and `&`.
 * `ss07`: ligatures related to colons like `::` or `=:=`.
@@ -117,7 +117,7 @@ Font caching on operating systems is an inscrutable mess dating back thirty year
 - First delete the old fonts…
 - Then install the new fonts…
 - Then restart applications that use the fonts…
-- … and maybe restart your entire computer. 
+- … and maybe restart your entire computer.
 
 Restarting is usually the only way to be 100% sure that the underlying machinery in the operating system picks up the new fonts.
 
