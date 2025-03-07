@@ -14,7 +14,7 @@ Monospace fonts involve glyphs which inherently have compromise in their design,
 
 *fig. 2*
 
-I’ve come to think of the ‘m’ example as belonging to a category called ‘**glyphs that need space**’ (fig. 3). If more space was available, these glyphs would love to take up more space. Somehow anthropomorphizing the glyphs a bit helps to understand the ideas here. 
+I’ve come to think of the ‘m’ example as belonging to a category called ‘**glyphs that need space**’ (fig. 3). If more space was available, these glyphs would love to take up more space. Somehow anthropomorphizing the glyphs a bit helps to understand the ideas here.
 
 ![LM-GH-TextureHealing-Documentation-03.png](images/LM-GH-TextureHealing-Documentation-03.png)
 
@@ -32,13 +32,13 @@ These categories of drawing in a monospace mean that a word like ‘swimming’ 
 
 # Intro to Glyph Variations
 
-One of the inherent problems with monospace fonts is, funnily enough, something we take for granted in most typeface design: the idea that there is just one version of every glyph. Disregarding script fonts, for instance, this is true of most fonts. If there is an ‘a’, there is just one unchanging ‘a’ that works in every situation. 
+One of the inherent problems with monospace fonts is, funnily enough, something we take for granted in most typeface design: the idea that there is just one version of every glyph. Disregarding script fonts, for instance, this is true of most fonts. If there is an ‘a’, there is just one unchanging ‘a’ that works in every situation.
 
 ![LM-GH-TextureHealing-Documentation-05b.gif](images/LM-GH-TextureHealing-Documentation-05b.gif)
 
 *fig. 6*
 
-What if this were not true? Texture Healing relies on the idea that if there is, for instance a default ‘i’, it is also joined by some alternates (fig. 6). Rather than changing the aesthetic styling of the glyph, the glyph construction, or other qualities that typically call for an alternate, Texture Healing relies on alternates that shift to the left and right, without changing the glyph bounds. In other words, the body size of the alternate versions never changes, only the width and positioning of the drawing within the glyph body. 
+What if this were not true? Texture Healing relies on the idea that if there is, for instance a default ‘i’, it is also joined by some alternates (fig. 6). Rather than changing the aesthetic styling of the glyph, the glyph construction, or other qualities that typically call for an alternate, Texture Healing relies on alternates that shift to the left and right, without changing the glyph bounds. In other words, the body size of the alternate versions never changes, only the width and positioning of the drawing within the glyph body.
 
 ![6-A.gif](images/6-A.gif)
 
@@ -46,7 +46,7 @@ What if this were not true? Texture Healing relies on the idea that if there is,
 
 At a high level, the steps of Texture Healing are:
 
-1. Equip the font with variations for letters that are otherwise compromised, in which the compromise is lessened. 
+1. Equip the font with variations for letters that are otherwise compromised, in which the compromise is lessened.
 2. Equip the font with an awareness of what a Texture Conflict is.
 3. Tell the font to swap in alternate glyphs, itself, in the event that they may alleviate a Texture Conflict.
 
@@ -60,7 +60,7 @@ The letter ‘i’ is in the ‘glyphs that can give space’ category. A Textur
 - i.left (narrower drawing, and purposefully sitting to the *left* of the glyph’s body)
 - i.right (narrower drawing, and purposefully sitting to the *right* of the glyph’s body)
 
-The default version is designed to function just as any monospace would, getting along with every other default glyph in a random order. The alternates, however, are designed to work in very specific contexts, and aren’t suitable to be used in place of defaults. 
+The default version is designed to function just as any monospace would, getting along with every other default glyph in a random order. The alternates, however, are designed to work in very specific contexts, and aren’t suitable to be used in place of defaults.
 
 ![7-A.gif](images/7-A.gif)
 
@@ -91,11 +91,11 @@ can be replaced with: f, i, l.left, m.left, i, n, g
 
 ![LM-GH-TextureHealing-Documentation-09.png](images/LM-GH-TextureHealing-Documentation-09.png)
 
-Because the alternate glyphs never take up any more space, on a line of text, than their default siblings, the word length does not change at all, and the monospacing is preserved. However the ‘l’ looks more natural, and the ‘m’ looks less cramped, and the word has become more pleasant to read, as a result. 
+Because the alternate glyphs never take up any more space, on a line of text, than their default siblings, the word length does not change at all, and the monospacing is preserved. However the ‘l’ looks more natural, and the ‘m’ looks less cramped, and the word has become more pleasant to read, as a result.
 
 ---
 
-Similar logic could be used for the word ‘winning’. 
+Similar logic could be used for the word ‘winning’.
 
 This sequence of glyphs: w, i, n, n, i, n, g
 
@@ -117,7 +117,7 @@ The feature code will be readily available, and thoroughly commented, in the .gl
 
 Semantic names have been chosen for the OpenType classes, which reference the categorical concepts we’ve established, for instance you will see definitions for the following classes:
 
-`@defaults_can_give_space`: If a glyph belongs to the ‘glyphs that can give space’ category, and alternates have been drawn for it, the default version should be in this class. For instance ‘i’ belongs here, as the default version of ‘i’. 
+`@defaults_can_give_space`: If a glyph belongs to the ‘glyphs that can give space’ category, and alternates have been drawn for it, the default version should be in this class. For instance ‘i’ belongs here, as the default version of ‘i’.
 
 `@can_give_space_left`: This contains the .left variations of every glyph added to the `@defaults_can_give_space` class.
 
@@ -129,7 +129,7 @@ A note on OpenType classes: these are sequential containers. The order of elemen
 
 ---
 
-`@defaults_can_take_space`: If a glyph belongs to the ‘glyphs that need space’ category, and alternates have been drawn for it, the default version should be in this class. For instance ‘m’ belongs here, as the default version of ‘m’. 
+`@defaults_can_take_space`: If a glyph belongs to the ‘glyphs that need space’ category, and alternates have been drawn for it, the default version should be in this class. For instance ‘m’ belongs here, as the default version of ‘m’.
 
 `@can_take_space_left:` This contains the .left variations of every glyph added to the `@defaults_can_take_space` class.
 
@@ -167,19 +167,19 @@ Let’s follow the process to add a new texture healed glyph. The first thing th
 
 *fig. 12*
 
-Next, you need to sort this glyph into one of our two categories: Is it a ‘glyph that needs space’ or a ‘glyph that can give space’ (fig. 12)? 
+Next, you need to sort this glyph into one of our two categories: Is it a ‘glyph that needs space’ or a ‘glyph that can give space’ (fig. 12)?
 
 Let’s pretend that we’ve just added the letter ‘m’ to our typeface, and we want to make sure it is texture healed (fig. 13). For the sake of this tutorial we are citing the ‘m’ as an example, but in its place you should imagine any glyph which belongs to the ‘glyphs that need space’ category.
 
-We’re going to assume that you’ve already drawn your default version of the ‘m’, which means: the version that can work with every other glyph in the character set, where its width accounts for spacing relationships to arbitrary preceding/following characters. 
+We’re going to assume that you’ve already drawn your default version of the ‘m’, which means: the version that can work with every other glyph in the character set, where its width accounts for spacing relationships to arbitrary preceding/following characters.
 
-The next step would be to design the ‘.left’ and ‘.right’ versions. For ‘m.left’, the drawing should become wider than the default drawing, but the spacing on the right side should remain identical. In this sense, the ‘m.left’ glyph gets wider, leftwards. 
+The next step would be to design the ‘.left’ and ‘.right’ versions. For ‘m.left’, the drawing should become wider than the default drawing, but the spacing on the right side should remain identical. In this sense, the ‘m.left’ glyph gets wider, leftwards.
 
 ![LM-GH-TextureHealing-Documentation-12b.png](images/LM-GH-TextureHealing-Documentation-12b.png)
 
 *fig. 13*
 
-The ‘m.right’ variation does the same thing, but this time the left side bearing remains identical, the wider drawing now extends to the right. Still without moving the overall width of the ‘glyph body’ at all. 
+The ‘m.right’ variation does the same thing, but this time the left side bearing remains identical, the wider drawing now extends to the right. Still without moving the overall width of the ‘glyph body’ at all.
 
 Next you will need an ‘m.both’ variation which is the widest of all the variations, and it extends in both directions. The spacing is no longer the same on either side, and we have a sort of ‘maximum footprint’ version of the glyph via this version.
 
@@ -198,15 +198,15 @@ And there you have it! You have a texture healed glyph which will get wider when
 
 If you sorted your glyph into the other category ,‘glyphs that need space’, you will need to follow extremely similar steps, with some small differences. Let’s say that you were adding ‘i’, and therefore it falls into this other category (fig. 15).
 
-When creating the .left and .right versions of your glyph, instead of making the drawings wider, the drawings will be narrower. When creating the .left variation, this time the left side bearing will remain the same, and the drawing will ‘scoot over’ to the left, as it gets narrower. 
+When creating the .left and .right versions of your glyph, instead of making the drawings wider, the drawings will be narrower. When creating the .left variation, this time the left side bearing will remain the same, and the drawing will ‘scoot over’ to the left, as it gets narrower.
 
 ![LM-GH-TextureHealing-Documentation-14b.png](images/LM-GH-TextureHealing-Documentation-14b.png)
 
 *fig. 15*
 
-The .right version follows the same logic, this time getting narrower rightwards. The bounding box of the glyph, its overall width or ‘body size’ remains the same. 
+The .right version follows the same logic, this time getting narrower rightwards. The bounding box of the glyph, its overall width or ‘body size’ remains the same.
 
-There is no .both variation for glyphs in this category, so that can be omitted. 
+There is no .both variation for glyphs in this category, so that can be omitted.
 
 And the class sorting steps would be:
 
