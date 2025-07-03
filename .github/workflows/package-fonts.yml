@@ -34,20 +34,20 @@ jobs:
             mkdir -p "Monaspace-${family}"
             
             # Copy OTF files from the checked-out monaspace repo
-            cp monaspace/fonts/otf/Monaspace${family}-* "Monaspace-${family}/"
+            cp fonts/otf/Monaspace${family}-* "Monaspace-${family}/"
             
             # Copy Variable font if it exists
-            if [ -f "monaspace/fonts/variable/Monaspace${family}VarVF.ttf" ]; then
-                cp "monaspace/fonts/variable/Monaspace${family}VarVF.ttf" "Monaspace-${family}/"
+            if [ -f "fonts/variable/Monaspace${family}VarVF.ttf" ]; then
+                cp "fonts/variable/Monaspace${family}VarVF.ttf" "Monaspace-${family}/"
             fi
             
             # Copy Frozen font if it exists
-            if [ -f "monaspace/fonts/frozen/Monaspace${family}Frozen.ttf" ]; then
-                cp "monaspace/fonts/frozen/Monaspace${family}Frozen.ttf" "Monaspace-${family}/"
+            if [ -f "fonts/frozen/Monaspace${family}Frozen.ttf" ]; then
+                cp "fonts/frozen/Monaspace${family}Frozen.ttf" "Monaspace-${family}/"
             fi
             
             # Copy webfonts, ignoring errors if no files are found
-            cp monaspace/fonts/webfonts/Monaspace${family}* "Monaspace-${family}/" 2>/dev/null || true
+            cp fonts/webfonts/Monaspace${family}* "Monaspace-${family}/" 2>/dev/null || true
             
             # Create a zip file for the family
             zip -r "Monaspace-${family}.zip" "Monaspace-${family}"
