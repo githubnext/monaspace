@@ -1,4 +1,4 @@
-name: Process and Package Monaspace Fonts
+name: Process and Package Monaspace Fonts by Family and Format
 
 # This action is triggered manually or on push to the main branch
 on:
@@ -23,67 +23,174 @@ jobs:
           repository: githubnext/monaspace
           path: monaspace
 
-      - name: Process and Package Fonts
-        # This script now operates from the root of the workspace
+      - name: Process and Package All Fonts
+        id: package_fonts
         run: |
-          # Define the font families to process
           families=("Argon" "Neon" "Xenon" "Radon" "Krypton")
-          
-          # Process each family
           for family in "${families[@]}"; do
-            echo "Processing Monaspace ${family}..."
-            
-            # Create a dedicated directory for the current font family
-            mkdir -p "Monaspace-${family}"
-            
-            # Copy OTF files from the checked-out monaspace repo
-            cp monaspace/fonts/otf/Monaspace${family}-* "Monaspace-${family}/"
-            
-            # Copy Variable font if it exists
+            echo "--- Processing Monaspace ${family} ---"
+
+            # Package OTF
+            echo "Packaging OTF for ${family}..."
+            mkdir -p "${family}-OTF"
+            cp monaspace/fonts/otf/Monaspace${family}-*.otf "${family}-OTF/"
+            zip -r "Monaspace-${family}-OTF.zip" "${family}-OTF"
+            rm -rf "${family}-OTF"
+
+            # Package Variable Font
             if [ -f "monaspace/fonts/variable/Monaspace${family}VarVF.ttf" ]; then
-                cp "monaspace/fonts/variable/Monaspace${family}VarVF.ttf" "Monaspace-${family}/"
+              echo "Packaging Variable font for ${family}..."
+              mkdir -p "${family}-Variable"
+              cp "monaspace/fonts/variable/Monaspace${family}VarVF.ttf" "${family}-Variable/"
+              zip -r "Monaspace-${family}-Variable.zip" "${family}-Variable"
+              rm -rf "${family}-Variable"
             fi
-            
-            # Copy Frozen font if it exists
+
+            # Package Frozen Font
             if [ -f "monaspace/fonts/frozen/Monaspace${family}Frozen.ttf" ]; then
-                cp "monaspace/fonts/frozen/Monaspace${family}Frozen.ttf" "Monaspace-${family}/"
+              echo "Packaging Frozen font for ${family}..."
+              mkdir -p "${family}-Frozen"
+              cp "monaspace/fonts/frozen/Monaspace${family}Frozen.ttf" "${family}-Frozen/"
+              zip -r "Monaspace-${family}-Frozen.zip" "${family}-Frozen"
+              rm -rf "${family}-Frozen"
             fi
-            
-            # Copy webfonts, ignoring errors if no files are found
-            cp monaspace/fonts/webfonts/Monaspace${family}* "Monaspace-${family}/" 2>/dev/null || true
-            
-            # Create a zip file for the family
-            zip -r "Monaspace-${family}.zip" "Monaspace-${family}"
-            
-            echo "Successfully created Monaspace-${family}.zip"
+
+            # Package Webfonts
+            if ls monaspace/fonts/webfonts/Monaspace${family}* 1> /dev/null 2>&1; then
+              echo "Packaging Webfonts for ${family}..."
+              mkdir -p "${family}-Webfonts"
+              cp monaspace/fonts/webfonts/Monaspace${family}* "${family}-Webfonts/"
+              zip -r "Monaspace-${family}-Webfonts.zip" "${family}-Webfonts"
+              rm -rf "${family}-Webfonts"
+            fi
           done
 
-      - name: Upload Argon Artifact
+      # --- Upload Argon Artifacts ---
+      - name: Upload Argon OTF
         uses: actions/upload-artifact@v4
         with:
-          name: Monaspace-Argon
-          path: Monaspace-Argon.zip
+          name: Monaspace-Argon-OTF
+          path: Monaspace-Argon-OTF.zip
+          if-no-files-found: warn
+      - name: Upload Argon Variable
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Argon-Variable
+          path: Monaspace-Argon-Variable.zip
+          if-no-files-found: warn
+      - name: Upload Argon Frozen
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Argon-Frozen
+          path: Monaspace-Argon-Frozen.zip
+          if-no-files-found: warn
+      - name: Upload Argon Webfonts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Argon-Webfonts
+          path: Monaspace-Argon-Webfonts.zip
+          if-no-files-found: warn
 
-      - name: Upload Neon Artifact
+      # --- Upload Neon Artifacts ---
+      - name: Upload Neon OTF
         uses: actions/upload-artifact@v4
         with:
-          name: Monaspace-Neon
-          path: Monaspace-Neon.zip
+          name: Monaspace-Neon-OTF
+          path: Monaspace-Neon-OTF.zip
+          if-no-files-found: warn
+      - name: Upload Neon Variable
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Neon-Variable
+          path: Monaspace-Neon-Variable.zip
+          if-no-files-found: warn
+      - name: Upload Neon Frozen
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Neon-Frozen
+          path: Monaspace-Neon-Frozen.zip
+          if-no-files-found: warn
+      - name: Upload Neon Webfonts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Neon-Webfonts
+          path: Monaspace-Neon-Webfonts.zip
+          if-no-files-found: warn
 
-      - name: Upload Xenon Artifact
+      # --- Upload Xenon Artifacts ---
+      - name: Upload Xenon OTF
         uses: actions/upload-artifact@v4
         with:
-          name: Monaspace-Xenon
-          path: Monaspace-Xenon.zip
+          name: Monaspace-Xenon-OTF
+          path: Monaspace-Xenon-OTF.zip
+          if-no-files-found: warn
+      - name: Upload Xenon Variable
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Xenon-Variable
+          path: Monaspace-Xenon-Variable.zip
+          if-no-files-found: warn
+      - name: Upload Xenon Frozen
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Xenon-Frozen
+          path: Monaspace-Xenon-Frozen.zip
+          if-no-files-found: warn
+      - name: Upload Xenon Webfonts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Xenon-Webfonts
+          path: Monaspace-Xenon-Webfonts.zip
+          if-no-files-found: warn
 
-      - name: Upload Radon Artifact
+      # --- Upload Radon Artifacts ---
+      - name: Upload Radon OTF
         uses: actions/upload-artifact@v4
         with:
-          name: Monaspace-Radon
-          path: Monaspace-Radon.zip
+          name: Monaspace-Radon-OTF
+          path: Monaspace-Radon-OTF.zip
+          if-no-files-found: warn
+      - name: Upload Radon Variable
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Radon-Variable
+          path: Monaspace-Radon-Variable.zip
+          if-no-files-found: warn
+      - name: Upload Radon Frozen
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Radon-Frozen
+          path: Monaspace-Radon-Frozen.zip
+          if-no-files-found: warn
+      - name: Upload Radon Webfonts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Radon-Webfonts
+          path: Monaspace-Radon-Webfonts.zip
+          if-no-files-found: warn
 
-      - name: Upload Krypton Artifact
+      # --- Upload Krypton Artifacts ---
+      - name: Upload Krypton OTF
         uses: actions/upload-artifact@v4
         with:
-          name: Monaspace-Krypton
-          path: Monaspace-Krypton.zip
+          name: Monaspace-Krypton-OTF
+          path: Monaspace-Krypton-OTF.zip
+          if-no-files-found: warn
+      - name: Upload Krypton Variable
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Krypton-Variable
+          path: Monaspace-Krypton-Variable.zip
+          if-no-files-found: warn
+      - name: Upload Krypton Frozen
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Krypton-Frozen
+          path: Monaspace-Krypton-Frozen.zip
+          if-no-files-found: warn
+      - name: Upload Krypton Webfonts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Krypton-Webfonts
+          path: Monaspace-Krypton-Webfonts.zip
+          if-no-files-found: warn
