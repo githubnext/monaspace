@@ -1,6 +1,6 @@
 name: Process and Package Monaspace Fonts
 
-# This action is triggered on every push to the 'next' branch
+# This action is triggered manually or on push to the main branch
 on:
   workflow_dispatch:
   push:
@@ -19,6 +19,9 @@ jobs:
       # Check out the Monaspace repository into a subdirectory named 'monaspace'
       - name: Checkout Monaspace repository
         uses: actions/checkout@v4
+        with:
+          repository: githubnext/monaspace
+          path: monaspace
 
       - name: Process and Package Fonts
         # This script now operates from the root of the workspace
@@ -34,20 +37,20 @@ jobs:
             mkdir -p "Monaspace-${family}"
             
             # Copy OTF files from the checked-out monaspace repo
-            cp fonts/otf/Monaspace${family}-* "Monaspace-${family}/"
+            cp monaspace/fonts/otf/Monaspace${family}-* "Monaspace-${family}/"
             
             # Copy Variable font if it exists
-            if [ -f "fonts/variable/Monaspace${family}VarVF.ttf" ]; then
-                cp "fonts/variable/Monaspace${family}VarVF.ttf" "Monaspace-${family}/"
+            if [ -f "monaspace/fonts/variable/Monaspace${family}VarVF.ttf" ]; then
+                cp "monaspace/fonts/variable/Monaspace${family}VarVF.ttf" "Monaspace-${family}/"
             fi
             
             # Copy Frozen font if it exists
-            if [ -f "fonts/frozen/Monaspace${family}Frozen.ttf" ]; then
-                cp "fonts/frozen/Monaspace${family}Frozen.ttf" "Monaspace-${family}/"
+            if [ -f "monaspace/fonts/frozen/Monaspace${family}Frozen.ttf" ]; then
+                cp "monaspace/fonts/frozen/Monaspace${family}Frozen.ttf" "Monaspace-${family}/"
             fi
             
             # Copy webfonts, ignoring errors if no files are found
-            cp fonts/webfonts/Monaspace${family}* "Monaspace-${family}/" 2>/dev/null || true
+            cp monaspace/fonts/webfonts/Monaspace${family}* "Monaspace-${family}/" 2>/dev/null || true
             
             # Create a zip file for the family
             zip -r "Monaspace-${family}.zip" "Monaspace-${family}"
@@ -55,15 +58,32 @@ jobs:
             echo "Successfully created Monaspace-${family}.zip"
           done
 
-      - name: Upload Font Artifacts
-        # This action uploads the generated zip files as artifacts
+      - name: Upload Argon Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: monaspace-font-packages
-          path: |
-            Monaspace-Argon.zip
-            Monaspace-Neon.zip
-            Monaspace-Xenon.zip
-            Monaspace-Radon.zip
-            Monaspace-Krypton.zip
+          name: Monaspace-Argon
+          path: Monaspace-Argon.zip
 
+      - name: Upload Neon Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Neon
+          path: Monaspace-Neon.zip
+
+      - name: Upload Xenon Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Xenon
+          path: Monaspace-Xenon.zip
+
+      - name: Upload Radon Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Radon
+          path: Monaspace-Radon.zip
+
+      - name: Upload Krypton Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Monaspace-Krypton
+          path: Monaspace-Krypton.zip
