@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - next
+      - main
 
 jobs:
   build-font-packages:
