@@ -2,6 +2,7 @@ name: Process and Package Monaspace Fonts
 
 # This action is triggered on every push to the 'next' branch
 on:
+  workflow_dispatch:
   push:
     branches:
       - next
