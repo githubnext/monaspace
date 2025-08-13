@@ -4,6 +4,13 @@ on:
   push:
     tags:
       - 'v*.*'  # Matches tags like v1.300, etc.
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version for testing (e.g., "test-1.4" or "dev-2024-01-01")'
+        required: true
+        default: 'test-1.4'
+        type: string
 
 permissions:
   contents: write  # Required to create releases and upload assets
@@ -18,12 +25,19 @@ jobs:
         with:
           fetch-depth: 0  # Full history for proper release notes
       
-      - name: Extract version from tag
+      - name: Extract version from tag or input
         id: version
         run: |
-          VERSION=${GITHUB_REF#refs/tags/v}
-          echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+            TAG="v${VERSION}"
+            echo "version=${VERSION}" >> $GITHUB_OUTPUT
+            echo "tag=${TAG}" >> $GITHUB_OUTPUT
+          else
+            VERSION=${GITHUB_REF#refs/tags/v}
+            echo "version=${VERSION}" >> $GITHUB_OUTPUT
+            echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          fi
       
       - name: Prepare release artifacts
         run: |
