@@ -1,0 +1,104 @@
+name: Create Release
+
+on:
+  push:
+    tags:
+      - 'v*.*'  # Matches tags like v1.300, etc.
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version for testing (e.g., "test-1.4" or "dev-2024-01-01")'
+        required: true
+        default: 'test-1.4'
+        type: string
+
+permissions:
+  contents: write  # Required to create releases and upload assets
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for proper release notes
+      
+      - name: Extract version from tag or input
+        id: version
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            VERSION="${{ github.event.inputs.version }}"
+            TAG="v${VERSION}"
+            echo "version=${VERSION}" >> $GITHUB_OUTPUT
+            echo "tag=${TAG}" >> $GITHUB_OUTPUT
+          else
+            VERSION=${GITHUB_REF#refs/tags/v}
+            echo "version=${VERSION}" >> $GITHUB_OUTPUT
+            echo "tag=${GITHUB_REF#refs/tags/}" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Prepare release artifacts
+        run: |
+          chmod +x scripts/prepare-release.sh
+          ./scripts/prepare-release.sh ${{ steps.version.outputs.version }}
+      
+      - name: Create release notes
+        id: release_notes
+        run: |
+          cat > release_notes.md << 'EOF'
+          # Monaspace ${{ steps.version.outputs.tag }}
+          
+          A superfamily of fonts for code. This release includes all font variants packaged for easy installation.
+          
+          ## Font Packages
+          
+          - **Static Fonts** - Individual OTF files for each weight and style
+          - **Variable Fonts** - Modern variable font files with adjustable weight/width
+          - **Frozen Fonts** - TTF files with all stylistic sets "baked in" by default for editors which do not support stylistic sets
+          - **NerdFonts** - Monaspace patched with [NerdFonts](https://www.nerdfonts.com/) glyphs
+          - **Web NerdFonts** - WOFF/WOFF2 files with NerdFonts icons for web use
+          - **Web Static** - WOFF/WOFF2 static font files optimized for web use
+          - **Web Variable** - WOFF/WOFF2 variable font files optimized for web use
+          
+          ## Installation
+          
+          1. Download the font package you need
+          2. Extract the zip file
+          3. Install the fonts on your system
+          4. Configure your editor/terminal to use Monaspace fonts
+          
+          See the [README](https://github.com/githubnext/monaspace#readme) for detailed installation instructions.
+          EOF
+      
+      - name: Create draft release with assets
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: Monaspace ${{ steps.version.outputs.tag }}
+          body_path: release_notes.md
+          draft: true
+          prerelease: false
+          files: |
+            release-artifacts/monaspace-static-v${{ steps.version.outputs.version }}.zip
+            release-artifacts/monaspace-variable-v${{ steps.version.outputs.version }}.zip
+            release-artifacts/monaspace-frozen-v${{ steps.version.outputs.version }}.zip
+            release-artifacts/monaspace-nerdfonts-v${{ steps.version.outputs.version }}.zip
+            release-artifacts/monaspace-webfont-nerdfonts-v${{ steps.version.outputs.version }}.zip
+            release-artifacts/monaspace-webfont-static-v${{ steps.version.outputs.version }}.zip
+            release-artifacts/monaspace-webfont-variable-v${{ steps.version.outputs.version }}.zip
+      
+      - name: Summary
+        run: |
+          echo "## Release Summary" >> $GITHUB_STEP_SUMMARY
+          echo "Created draft release: **Monaspace ${{ steps.version.outputs.tag }}**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Uploaded Assets:" >> $GITHUB_STEP_SUMMARY
+          ls -lh release-artifacts/*.zip | while read line; do
+            filename=$(echo "$line" | awk '{print $9}' | xargs basename)
+            size=$(echo "$line" | awk '{print $5}')
+            echo "- $filename ($size)" >> $GITHUB_STEP_SUMMARY
+          done
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "🔗 **[View Draft Release](https://github.com/${{ github.repository }}/releases/tag/${{ steps.version.outputs.tag }})**" >> $GITHUB_STEP_SUMMARY
