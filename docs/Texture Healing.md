@@ -143,15 +143,11 @@ A note on OpenType classes: these are sequential containers. The order of elemen
 
 Once these classes are defined, a series of lookups are defined, such as:
 
-**`lookup** defaultLeftPass {`
-
-*`#if a glyph that can take space is to the left of a glyph that can give space, cause the glyph that can give space to extend to the right`*
-
-*`#sample: im = i.left m;`*
-
-**`sub** @defaults_can_give_space' @defaults_can_take_space **by** @can_give_space_left;`
-
-`} defaultLeftPass;`
+<pre><code><b>lookup</b> defaultLeftPass {
+<i>#if a glyph that can take space is to the left of a glyph that can give space, cause the glyph that can give space to extend to the right</i>
+<i>#sample: im = i.left m;</i>
+<b>sub</b> @defaults_can_give_space' @defaults_can_take_space <b>by</b> @can_give_space_left;
+} defaultLeftPass;</code></pre>
 
 Each has been thoroughly commented to describe its purpose, using the # commenting syntax in OpenType feature code. Each contains a ‘#sample’ portion, which shows a hypothetical before/after swap in OpenType (as if the glyphs were hard-coded, when in fact the logic is class-based).
 
