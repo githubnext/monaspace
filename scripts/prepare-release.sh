@@ -12,7 +12,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 # Configuration
-FONTS_DIR="./fonts"
+FONTS_DIR="fonts"
 OUTPUT_DIR="./release-artifacts"
 VERSION=${1:-"1.3"}
 
@@ -39,10 +39,8 @@ create_zip() {
     local full_path="$FONTS_DIR/$source_dir"
     
     if [ -d "$full_path" ]; then
-        echo "  Creating $zip_name..."
-        cd "$FONTS_DIR"
-        zip -r "../$OUTPUT_DIR/$zip_name" "$source_dir" > /dev/null
-        cd - > /dev/null
+        echo "  Creating $zip_name from $full_path"
+        zip -r "$OUTPUT_DIR/$zip_name" "$(pwd)/$full_path" > /dev/null
         
         # Get file count and size
         local file_count=$(find "$full_path" -type f | wc -l | tr -d ' ')
@@ -63,17 +61,10 @@ create_zip "NerdFonts" "monaspace-nerdfonts-v${VERSION}.zip"
 if [ -d "$FONTS_DIR/Web Fonts" ]; then
     echo -e "${YELLOW}Processing web fonts...${NC}"
     
-    # Save current directory and change to Web Fonts
-    ORIGINAL_FONTS_DIR="$FONTS_DIR"
-    FONTS_DIR="$FONTS_DIR/Web Fonts"
-    
     # Now create zips from within Web Fonts directory
-    create_zip "NerdFonts Web Fonts" "../monaspace-webfont-nerdfonts-v${VERSION}.zip"
-    create_zip "Static Web Fonts" "../monaspace-webfont-static-v${VERSION}.zip"
-    create_zip "Variable Web Fonts" "../monaspace-webfont-variable-v${VERSION}.zip"
-    
-    # Restore original FONTS_DIR
-    FONTS_DIR="$ORIGINAL_FONTS_DIR"
+    create_zip "Web Fonts/NerdFonts Web Fonts" "monaspace-webfont-nerdfonts-v${VERSION}.zip"
+    create_zip "Web Fonts/Static Web Fonts" "monaspace-webfont-static-v${VERSION}.zip"
+    create_zip "Web Fonts/Variable Web Fonts" "monaspace-webfont-variable-v${VERSION}.zip"
 else
     echo -e "${RED}Warning: Web Fonts directory not found${NC}"
 fi
