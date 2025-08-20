@@ -36,11 +36,16 @@ echo -e "${YELLOW}Preparing release artifacts...${NC}"
 create_zip() {
     local source_dir="$1"
     local zip_name="$2"
-    local full_path="$FONTS_DIR/$source_dir"
+    local parent_dir="${3:-$FONTS_DIR}"
+    local full_path="$parent_dir/$source_dir"
     
     if [ -d "$full_path" ]; then
         echo "  Creating $zip_name from $full_path"
-        zip -r "$OUTPUT_DIR/$zip_name" "$(pwd)/$full_path" > /dev/null
+        if [ "$parent_dir" = "$FONTS_DIR" ]; then
+            (cd "$parent_dir" && zip -r "../$OUTPUT_DIR/$zip_name" "$source_dir") > /dev/null
+        else
+            (cd "$parent_dir" && zip -r "../../$OUTPUT_DIR/$zip_name" "$source_dir") > /dev/null
+        fi
         
         # Get file count and size
         local file_count=$(find "$full_path" -type f | wc -l | tr -d ' ')
@@ -61,10 +66,10 @@ create_zip "NerdFonts" "monaspace-nerdfonts-v${VERSION}.zip"
 if [ -d "$FONTS_DIR/Web Fonts" ]; then
     echo -e "${YELLOW}Processing web fonts...${NC}"
     
-    # Now create zips from within Web Fonts directory
-    create_zip "Web Fonts/NerdFonts Web Fonts" "monaspace-webfont-nerdfonts-v${VERSION}.zip"
-    create_zip "Web Fonts/Static Web Fonts" "monaspace-webfont-static-v${VERSION}.zip"
-    create_zip "Web Fonts/Variable Web Fonts" "monaspace-webfont-variable-v${VERSION}.zip"
+    # Create zips from within Web Fonts directory
+    create_zip "NerdFonts Web Fonts" "monaspace-webfont-nerdfonts-v${VERSION}.zip" "$FONTS_DIR/Web Fonts"
+    create_zip "Static Web Fonts" "monaspace-webfont-static-v${VERSION}.zip" "$FONTS_DIR/Web Fonts"
+    create_zip "Variable Web Fonts" "monaspace-webfont-variable-v${VERSION}.zip" "$FONTS_DIR/Web Fonts"
 else
     echo -e "${RED}Warning: Web Fonts directory not found${NC}"
 fi
