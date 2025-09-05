@@ -195,7 +195,7 @@ You must use the `editor.fontLigatures` setting to enable the various features (
 
 Putting it all together, a setting string which enables everything but the character variants would look like this:
 ```json
-  "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09'"
+  "editor.fontLigatures": "'calt', 'liga', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'ss09', 'ss10'"
 ```
 
 Specific character variants are also enabled using the [`font-feature-settings`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings) syntax. To enable slashed zeroes (with `cv01`) and six-pointed asterisks (with `cv31`), you might use the following settings:
