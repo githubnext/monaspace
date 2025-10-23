@@ -187,6 +187,7 @@ You must use the `editor.fontLigatures` setting to enable the various features (
 
 > [!NOTE]
 > This setting is unavailable from the graphical settings editor; you must create it manually.
+> You can open up your `settings.json` file by opening the Command Palette (pressing Ctrl+Shift+P on Windows and Linux or Cmd+Shift+P on MacOS) and pasting `Preferences: Open User Settings (JSON)`.
 
 - `calt`: enables texture healing
 - `liga`: enables dynamic spacing for certain repeating character patterns like `///`
