@@ -8,9 +8,7 @@ Letters on a grid is how we see our code. Why not make those letters better?
 
 🔤 **[Download the latest release](https://github.com/githubnext/monaspace/releases/latest)** 🔤
 
-![image](https://github.com/githubnext/monaspace/assets/22723/301020e0-f138-44af-abb1-48efa610be08)
-
-
+![image](https://github.com/githubnext/monaspace/assets/22723/301020e0-f138-44af-abb1-
 ## Overview
 
 Monaspace is five interchangable type families, each of which is packaged into three distinct formats. You can install all of them side-by-side; their family names are distinct by family and format. For example:
