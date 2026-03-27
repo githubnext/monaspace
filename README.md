@@ -130,12 +130,6 @@ Restarting is usually the only way to be 100% sure that the underlying machinery
 ### MacOS
 You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fonts/frozen` directories into Font Book.
 
-There is also a script that automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
-
-```bash
-$ bash util/install_macos.sh
-```
-
 You can also use [Homebrew](https://brew.sh/) as an alternative, though it may not always have the latest version of Monaspace.
 
 ```bash
