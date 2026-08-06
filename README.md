@@ -265,4 +265,4 @@ Monaspace was made to improve all code for all developers. [GitHub Next](https:/
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=githubnext/monaspace&type=Date)](https://star-history.com/#githubnext/monaspace&Date)
+[![Star History Chart](https://star-history.dera.page/svg?repos=githubnext/monaspace&type=Date)](https://star-history.dera.page/#githubnext/monaspace&Date)
