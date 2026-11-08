@@ -128,7 +128,7 @@ Font caching on operating systems is an inscrutable mess dating back thirty year
 Restarting is usually the only way to be 100% sure that the underlying machinery in the operating system picks up the new fonts.
 
 ### MacOS
-You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fonts/frozen` directories into Font Book.
+You can manually drag the fonts from the `fonts/Static Fonts`, `fonts/Variable Fonts`, and `fonts/Frozen Fonts` directories into Font Book.
 
 There is also a script that automates the deletion of all Monaspace fonts from `~/Library/Fonts` and then copies over the latest versions. Invoke it from the root of the repo like:
 
@@ -143,10 +143,10 @@ brew install --cask font-monaspace
 ```
 
 ### Windows
-You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fonts/frozen` directories into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
+You can manually drag the fonts from the `fonts/Static Fonts`, `fonts/Variable Fonts`, and `fonts/Frozen Fonts` directories into `C:\Windows\Fonts`. Alternatively, right-click the fonts you want and click Install.
 
 ### Linux
-You can manually drag the fonts from the `fonts/otf`, `fonts/variable`, and `fonts/frozen` directories into `~/.local/share/fonts`.
+You can manually drag the fonts from the `fonts/Static Fonts`, `fonts/Variable Fonts`, and `fonts/Frozen Fonts` directories into `~/.local/share/fonts`.
 
 After doing so, it's probably wise to rebuild your font cache like so:
 
