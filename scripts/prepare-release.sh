@@ -17,7 +17,7 @@ OUTPUT_DIR="./release-artifacts"
 
 # No default: a hardcoded fallback goes stale on every release.
 if [ -z "$1" ]; then
-    echo -e "${RED}Usage: $0 <version>  (e.g. $0 1.400)${NC}"
+    echo -e "${RED}Usage: $0 <version>  (e.g. $0 1.400)${NC}" >&2
     exit 1
 fi
 VERSION="$1"
