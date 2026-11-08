@@ -14,7 +14,13 @@ NC='\033[0m' # No Color
 # Configuration
 FONTS_DIR="fonts"
 OUTPUT_DIR="./release-artifacts"
-VERSION=${1:-"1.3"}
+
+# No default: a hardcoded fallback goes stale on every release.
+if [ -z "$1" ]; then
+    echo -e "${RED}Usage: $0 <version>  (e.g. $0 1.400)${NC}"
+    exit 1
+fi
+VERSION="$1"
 
 echo -e "${GREEN}Monaspace Release Artifacts Generator${NC}"
 echo -e "Version: ${YELLOW}${VERSION}${NC}"
